@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+  }
+
+.top {
+    height: 800px;
+    background-image: url(./img/heder-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
