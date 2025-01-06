@@ -8,10 +8,128 @@
   }
 
 .top {
-    height: 800px;
+    padding-top: 196px;
     background-image: url(./img/heder-fon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
 
+.heading {
+    font-family: inherit;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    text-align: left;
+}
+
+.heading-big {
+    font-family: inherit;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    text-align: left;
+}
+
+.heading-top {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.button {
+    padding: 5px 25px 5px 25px;
+    gap: 10px;
+    border-radius: 60px 60px 60px 60px;
+    border: 1px 0px 0px 0px;
+    margin-bottom: 156px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    transition: all .5s;
+}
+
+    .button:hover {
+      background-color: rgb(255, 255, 255);
+      color: black;
+      cursor: pointer;
+    }
+
+.container {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+}
+
+.container-bar {
+    color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 700;
+line-height: 110%;
+letter-spacing: 4%;
+text-align: left;
+text-transform: uppercase;
+    
+}
+
+.star-min1 {
+width: 36px;
+height: 36px;
+margin: 0px 51px;
+}
+
+.game {
+        border-radius: 30px;
+        background: rgb(247, 246, 246);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+.game__text {
+        color: rgb(32, 32, 39);
+        font-size: 26px;      
+    }
+
+.game__text1 {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.game-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.minigame {
+    width: 100%;
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_text {
+    margin-top: 42px;
+    background-color: hsl(90, 100%, 50%);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 24px;
+    text-align: center;
 }
