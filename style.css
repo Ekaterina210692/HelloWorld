@@ -6,29 +6,46 @@
     padding-left: calc(50% - 720px);
     padding-right: calc(50% - 720px);
   }
-
-.top {
-    padding-top: 196px;
+body {
     background-image: url(./img/heder-fon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+.top {
+    padding-top: 196px;
+    
+}
+
+.top-container {
+    position: relative;
+}
+
+.top-img {
+    position: absolute;
+    left: 939px;
+    top: -574.29px;
+}
+.top-img1 {
+    position: absolute;
+        left: -156px;
+        top: -76px;
 }
 
 .heading {
+    color: aliceblue;
     font-family: inherit;
     font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-    text-align: left;
+    padding-top: 64px;
+    margin-bottom: 24px;
+    padding-left: 131px;
 }
 
 .heading-big {
     font-family: inherit;
     font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-    text-align: left;
+    width: 768px;
 }
 
 .heading-top {
@@ -37,8 +54,19 @@
     font-family: inherit;
     font-size: 24px;
     font-weight: 400;
-    line-height: 32px;
-    text-align: left;
+    width: 720px;
+    height: 64px;
+}
+
+.heading-min {
+    color: aliceblue;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 62px;
+    padding-left: 131px;
+    width: 948px;
+    
 }
 
 .button {
@@ -88,31 +116,39 @@ margin: 0px 51px;
 }
 
 .game {
-        border-radius: 30px;
-        background: rgb(247, 246, 246);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.game-box1 {
+    background-image: url(./img/Group\ об\ играх\ фон1597880580.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
 
 .game__text {
         color: rgb(32, 32, 39);
-        font-size: 26px;      
+    font-family: inherit;
+    font-size: 32px;
+    width: 378px;
     }
 
 .game__text1 {
     color: rgb(32, 32, 39);
-    font-family: Montserrat;
+    font-family: inherit;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 110%;
 }
 
 .game-content {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+    margin-bottom: 63px;
 }
 
 .minigame {
