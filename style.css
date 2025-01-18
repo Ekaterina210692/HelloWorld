@@ -6,16 +6,19 @@
     padding-left: calc(50% - 720px);
     padding-right: calc(50% - 720px);
   }
-body {
+/* body {
     background-image: url(./img/heder-fon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  } */
 
 .top {
     padding-top: 196px;
-    
+    background-image: url(./img/heder-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .top-container {
@@ -37,9 +40,7 @@ body {
     color: aliceblue;
     font-family: inherit;
     font-size: 64px;
-    padding-top: 64px;
-    margin-bottom: 24px;
-    padding-left: 131px;
+    padding: 94px 131px 10px 131px;
 }
 
 .heading-big {
@@ -62,18 +63,13 @@ body {
     color: aliceblue;
     font-family: Montserrat;
     font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 62px;
-    padding-left: 131px;
-    width: 948px;
+    padding: 64px 121px;
     
 }
 
 .button {
     padding: 5px 25px 5px 25px;
-    gap: 10px;
     border-radius: 60px 60px 60px 60px;
-    border: 1px 0px 0px 0px;
     margin-bottom: 156px;
     background-color: black;
     color: rgb(255, 255, 255);
@@ -84,7 +80,7 @@ body {
     transition: all .5s;
 }
 
-    .button:hover {
+.button:hover {
       background-color: rgb(255, 255, 255);
       color: black;
       cursor: pointer;
@@ -99,48 +95,46 @@ body {
 
 .container-bar {
     color: rgb(32, 32, 39);
-font-family: Montserrat;
-font-size: 30px;
-font-weight: 700;
-line-height: 110%;
-letter-spacing: 4%;
-text-align: left;
-text-transform: uppercase;
-    
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase; 
 }
 
 .star-min1 {
-width: 36px;
-height: 36px;
-margin: 0px 51px;
+    width: 36px;
+    height: 36px;
+    margin: 0px 51px;
 }
 
 .game {
     border-radius: 30px;
     background: rgb(247, 246, 246);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
 }
 
-.game-box1 {
-    background-image: url(./img/Group\ об\ играх\ фон1597880580.svg);
-    background-position: cover;
+.game-img {
+    width: 100%;
+}
+
+.game-box {
+    background-image: url(./img/Group-об-играх-фон1597880580.svg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 144px;
 }
 
-.game__text {
-        color: rgb(32, 32, 39);
+.game-text1 {
+    color: rgb(32, 32, 39);
     font-family: inherit;
-    font-size: 32px;
-    width: 378px;
+    padding: 36px 32px;
     }
 
-.game__text1 {
+.game-text {
     color: rgb(32, 32, 39);
     font-family: inherit;
     font-size: 16px;
+    padding: 16px;
 }
 
 .game-content {
@@ -161,7 +155,7 @@ margin: 0px 51px;
     gap: 20px;
 }
 
-.footer_text {
+.footer-text {
     margin-top: 42px;
     background-color: hsl(90, 100%, 50%);
     padding-top: 32px;
