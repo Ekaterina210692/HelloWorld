@@ -68,6 +68,9 @@
 }
 
 .button {
+    display: block;
+    text-decoration: none;
+    margin-right: 1272px;
     padding: 5px 25px 5px 25px;
     border-radius: 60px 60px 60px 60px;
     margin-bottom: 156px;
@@ -110,6 +113,11 @@
 .game {
     border-radius: 30px;
     background: rgb(247, 246, 246);
+    transition: all 0.5s;
+}
+
+.game:hover {
+    transform: scale(1.1);
 }
 
 .game-img {
@@ -117,8 +125,8 @@
 }
 
 .game-box {
-    background-image: url(./img/Group-об-играх-фон1597880580.svg);
-    background-position: center;
+    background-image: url(./img/vaivai.png);
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 144px;
@@ -134,7 +142,7 @@
     color: rgb(32, 32, 39);
     font-family: inherit;
     font-size: 16px;
-    padding: 16px;
+    padding: 16px 32px;
 }
 
 .game-content {
