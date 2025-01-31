@@ -29,6 +29,7 @@
     position: absolute;
     left: 939px;
     top: -574.29px;
+    overflow: hidden;
 }
 .top-img1 {
     position: absolute;
@@ -91,9 +92,11 @@
 
 .container {
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    overflow: hidden;
 }
 
 .container-bar {
@@ -105,9 +108,9 @@
 }
 
 .star-min1 {
-    width: 36px;
-    height: 36px;
-    margin: 0px 51px;
+    width: 27px;
+    height: 21px;
+    margin: 0px 12px;
 }
 
 .game {
@@ -120,14 +123,14 @@
     transform: scale(1.1);
 }
 
-.game-img {
+/* .game-img {
     width: 100%;
 }
 
 .game-box {
+    background: rgb(32, 32, 39);
     background-image: url(./img/vaivai.png);
-    /* background-position: center; */
-    background-size: cover;
+    background-position: 432px 0px;
     background-repeat: no-repeat;
     padding-bottom: 144px;
 }
@@ -154,7 +157,6 @@
 }
 
 .minigame {
-    width: 100%;
     border-radius: 30px;
     background: rgb(247, 246, 246);
     display: flex;
