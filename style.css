@@ -106,14 +106,18 @@ body {
     cursor: pointer;
 }
 .container {
-    box-sizing: border-box;
-    background: rgb(188, 236, 48);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
     overflow: hidden;
+    position: absolute;
+    height: 90px;
+    left: -30px;
+    top: 594px;
+    display: flex;
+    gap: 10;
+    padding: 27px 49px 27px 49px;
+    background: rgb(188, 236, 48);
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .container-bar {
