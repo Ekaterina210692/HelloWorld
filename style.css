@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+  }
+body {
+    background-image: url(./img/heder-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.top {
+    padding-top: 196px;
+    /* background-image: url(./img/heder-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.top-container {
+    position: relative;
+}
+
+.top-img {
+    position: absolute;
+    left: 475px;
+    top: -597px;
+}
+.top-img1 {
+    position: absolute;
+        left: -156px;
+        top: -76px;
+}
+
+.heading {
+    color: aliceblue;
+    font-family: inherit;
+    font-size: 64px;
+    padding: 48px 131px 48px 131px;
+}
+
+.heading-big {
+    font-family: inherit;
+    font-size: 64px;
+    max-width: 768px;
+}
+
+.heading-top {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 720px;
+    height: 64px;
+}
+
+.heading-min {
+    color: aliceblue;
+    font-family: Montserrat;
+    font-size: 32px;
+    padding: 3% 26% 5% 9%;
+    
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    margin-right: 1272px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 60px 60px 60px 60px;
+    margin-bottom: 156px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    transition: all .5s;
+}
+
+.button:hover {
+      background-color: rgb(255, 255, 255);
+      color: black;
+      cursor: pointer;
+}
+
+
+.buttonn {
+    display: block;
+    text-decoration: none;
+    padding: 5px 25px 5px 25px;
+    border-radius: 60px 60px 60px 60px;
+    background-color: black;
+}
+
+.buttonn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+.container {
+    overflow: hidden;
+    position: absolute;
+    height: 90px;
+    left: -30px;
+    top: 594px;
+    display: flex;
+    gap: 10;
+    padding: 27px 49px 27px 49px;
+    background: rgb(188, 236, 48);
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.container-bar {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.star-min1 {
+    height: 21px;
+    margin: 0px 12px;
+}
+
+.game {
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    transition: all 0.5s;
+}
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+/* .game-img {
+    width: 100%;
+} */
+
+.game-box {
+    background: rgb(32, 32, 39);
+    background-image: url(./img/vaivai.png);
+    background-position: 17% 0%;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+}
+
+.game-text1 {
+    color: rgb(32, 32, 39);
+    font-family: inherit;
+    padding: 36px 32px;
+    }
+
+.game-text {
+    color: rgb(32, 32, 39);
+    font-family: inherit;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.game-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 63px;
+}
+
+.game-contentt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 64px;
+    padding-bottom: 109px;
+}
+
+.content-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minigame {
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-text {
+    margin-top: -63px;
+    background-color: hsl(90, 100%, 50%);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 24px;
+    text-align: center;
+}
