@@ -20,11 +20,9 @@ body {
     background-position: center;
     background-size: cover; */
 }
-
 .top-container {
     position: relative;
 }
-
 .top-img {
     position: absolute;
     left: 939px;
@@ -43,23 +41,18 @@ body {
     font-size: 64px;
     padding: 48px 131px 48px 131px;
 }
-
 .heading-big {
     font-family: inherit;
     font-size: 64px;
     width: 768px;
 }
-
 .heading-top {
     padding-top: 24px;
     padding-bottom: 48px;
     font-family: inherit;
     font-size: 24px;
     font-weight: 400;
-    width: 720px;
-    height: 64px;
 }
-
 .heading-min {
     color: aliceblue;
     font-family: Montserrat;
@@ -83,7 +76,6 @@ body {
     line-height: 141.69%;
     transition: all .5s;
 }
-
 .button:hover {
       background-color: rgb(255, 255, 255);
       color: black;
@@ -100,7 +92,6 @@ body {
     padding: 12px;
     overflow: hidden;
 }
-
 .container-bar {
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -120,15 +111,9 @@ body {
     background: rgb(247, 246, 246);
     transition: all 0.5s;
 }
-
 .game:hover {
     transform: scale(1.1);
 }
-
-/* .game-img {
-    width: 100%;
-} */
-
 .game-box {
     background: rgb(32, 32, 39);
     background-image: url(./img/vaivai.png);
@@ -136,7 +121,6 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 0px;
 }
-
 .game-text1 {
     color: rgb(32, 32, 39);
     font-family: inherit;
@@ -149,7 +133,6 @@ body {
     font-size: 16px;
     padding: 16px 32px;
 }
-
 .game-content {
     display: flex;
     flex-wrap: wrap;
