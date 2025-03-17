@@ -3,22 +3,21 @@
     padding: 0;
 }
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 body {
-    background-image: url(./img/heder-fon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    font-family: "Montserrat";
   }
 
 .top {
     padding-top: 196px;
-    /* background-image: url(./img/heder-fon.png);
+    padding-bottom: 156px;
+    background-image: url(./img/heder-fon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
+    overflow: hidden;
 
 &-container {
     position: relative;
@@ -26,43 +25,71 @@ body {
 
 &-img {
     position: absolute;
-    left: 939px;
+    right: -619px;
     top: -574.29px;
-    overflow: hidden;
 }
 &-img1 {
     position: absolute;
-        left: -156px;
-        top: -76px;
+    left: -45px;
+    top: -92px;
 }
 }
 
-.heading {
-    color: aliceblue;
+.header {
+    color: #202027;
     font-family: inherit;
-    font-size: 64px;
-    padding: 48px 131px 48px 131px;
 
-&-big {
-    font-family: inherit;
-    font-size: 64px;
-    max-width: 768px;
+    &__title {
+        font-family: inherit;
+        font-size: 64px;
+        max-width: 768px;
+        margin-bottom: 24px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 48px;
+        max-width: 720px;
+    }
+
+    &__button {
+        border-radius: 60px;
+        background-color: #202027;
+        color: white;
+        padding: 16px 65px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        transition: all .5s;
+        &:hover {   
+            background-color: rgb(255, 255, 255);
+            color: black;
+          }
+    }
 }
 
-&-top {
-    padding: 24px 821px 48px 0px;
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: 400;
-    // width: 720px;
-    // height: 64px;
-}
+.animatedStrip {
+    box-sizing: border-box;
+    background: rgb(188, 236, 48);
+    text-align: center;
+    padding: 9px;
+    overflow: hidden;
 
-&-min {
-    color: aliceblue;
-    font-family: Montserrat;
-    font-size: 32px;
-    padding: 3% 26% 5% 9%;  
+&__game {
+    color: rgb(32, 32, 39);
+    text-decoration: none;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+&__img {
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px;
 }
 }
 
@@ -88,45 +115,8 @@ body {
     }
 }
 
-.container {
-    box-sizing: border-box;
-    background: rgb(188, 236, 48);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    overflow: hidden;
-
-&-bar {
-    color: rgb(32, 32, 39);
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase; 
-}
-}
-
-.star-min1 {
-    width: 27px;
-    height: 21px;
-    margin: 0px 12px;
-}
-
-.game {
-    border-radius: 30px;
-    background: rgb(247, 246, 246);
-    transition: all 0.5s;
-
-&:hover {
-    transform: scale(1.1);
-}
-
-/* .game-img {
-    width: 100%;
-} */
-
-&-box {
+.games {
+&__box {
     background: rgb(32, 32, 39);
     background-image: url(./img/vaivai.png);
     background-position: 17% 0%;
@@ -134,25 +124,45 @@ body {
     padding-bottom: 0px;
 }
 
-&-text1 {
-    color: rgb(32, 32, 39);
-    font-family: inherit;
-    padding: 36px 32px;
-    }
-
-&-text {
+&__heading {
+    color: white;
+    font-size: 64px;
+    max-width: 788px;
+}
+&__text {
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 24px 493px 72px 2px;
+}
+&__text1 {
     color: rgb(32, 32, 39);
     font-family: inherit;
     font-size: 16px;
     padding: 16px 32px;
 }
+&__text2{
+    font-size: 32px;
+    padding: 32px 0px 36px 0px;
+    color: #202027;
+    text-align: center;
+    max-width: 314px;
+}
 
-&-content {
+&__content {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     justify-content: center;
     margin-bottom: 63px;
+}
+&__card {
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 }
 
@@ -173,6 +183,6 @@ body {
     text-align: center;
 }
 
-@import '_vars.scss';
-@import '_tablet.scss';
-@import '_mobile.scss';
+@import 'vars.scss';
+@import 'tablet.scss';
+@import 'mobile.scss';
