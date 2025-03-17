@@ -147,6 +147,7 @@ body {
     color: #202027;
     text-align: center;
     max-width: 314px;
+    margin-bottom: 24px; //*убрать когда будет блок мини-игры*/
 }
 
 &__content {
@@ -175,12 +176,15 @@ body {
     gap: 20px;
 }
 
-.footer-text {
+.footer {
+    background: #BDED35;
+&__text {
     margin-top: -63px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 24px;
     text-align: center;
+}
 }
 
 @import 'vars.scss';
