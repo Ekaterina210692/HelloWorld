@@ -123,6 +123,9 @@ body {
   max-width: 788px;
   padding-top: 94px;
 }
+.games__link {
+  text-decoration: none;
+}
 .games__text {
   color: white;
   font-size: 24px;
@@ -130,19 +133,20 @@ body {
   padding: 24px 493px 72px 2px;
 }
 .games__numbering {
-  background-color: #d2c8c8;
+  background-color: rgba(0, 17, 0, 0.0666666667);
   border-radius: 30px;
   color: rgb(32, 32, 39);
-  font-family: inherit;
+  max-width: 108px;
   font-size: 16px;
   font-weight: 500;
-  padding: 16px 32px;
+  padding: 10px 0px 10px 30px;
+  margin: 16px;
 }
 .games__name {
   font-size: 32px;
   padding: 32px;
   color: #202027;
-  text-align: center;
+  text-align: left;
   max-width: 314px;
   margin-bottom: 24px;
 }
