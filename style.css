@@ -89,31 +89,10 @@ body {
   margin: 0px 5px;
 }
 
-.button {
-  display: block;
-  text-decoration: none;
-  margin-right: 1272px;
-  padding: 5px 25px 5px 25px;
-  border-radius: 60px 60px 60px 60px;
-  margin-bottom: 156px;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 141.69%;
-  transition: all 0.5s;
-}
-.button:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  cursor: pointer;
-}
-
 .games__box {
   background: rgb(32, 32, 39);
   background-image: url(./img/vaivai.png);
-  background-position: 17% 0%;
+  background-position: 64% 0%;
   background-repeat: no-repeat;
   padding-bottom: 0px;
 }
@@ -143,12 +122,18 @@ body {
   margin: 16px;
 }
 .games__name {
-  font-size: 32px;
+  font-size: 33px;
   padding: 32px;
   color: #202027;
   text-align: left;
   max-width: 314px;
-  margin-bottom: 24px;
+}
+.games__names {
+  font-size: 34px;
+  padding: 32px;
+  color: #202027;
+  text-align: left;
+  max-width: 314px;
 }
 .games__content {
   display: flex;
@@ -166,13 +151,83 @@ body {
   transform: scale(1.1);
 }
 
-.minigame {
-  border-radius: 30px;
-  background: rgb(247, 246, 246);
+.minigames__box {
+  background: rgb(32, 32, 39);
+}
+.minigames__heading {
+  color: white;
+  font-size: 64px;
+  max-width: 788px;
+  padding: 46px 0px 72px;
+}
+.minigames__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+.minigames__first {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__two {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__three {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__four {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__five {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__six {
+  display: flex;
+  align-items: center;
+  margin-bottom: 144px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.minigames__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 32px 317px 43px 48px;
+}
+.minigames__subtitle {
+  font-size: 48px;
+}
+.minigames__article {
+  font-size: 24px;
+  line-height: 32px;
+}
+.minigames__but {
+  border-radius: 60px;
+  background-color: #202027;
+  padding: 16px 65px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .footer {
