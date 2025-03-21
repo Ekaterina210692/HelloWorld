@@ -231,14 +231,14 @@ body {
 }
 
 .footer {
-  background: #BDED35;
+  background: rgb(189, 237, 53);
 }
 .footer__text {
-  margin-top: -63px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-size: 24px;
   text-align: center;
+  font-weight: 600;
+  padding: 32px 0px 32px 0px;
+  line-height: 29px;
 }
 
 @media (max-width: 475px) {
@@ -269,7 +269,7 @@ body {
   .header__button {
     font-size: 16px;
     padding: 16px 103px;
-    margin-left: 58px;
+    margin-left: 45px;
   }
   .games__heading {
     font-size: 40px;
@@ -277,6 +277,7 @@ body {
     max-width: 262px;
     margin-left: auto;
     margin-right: auto;
+    padding: 32px 0px 46px;
   }
   .games__text {
     font-size: 16px;
@@ -284,5 +285,8 @@ body {
     padding: 0;
     line-height: 100%;
     padding-bottom: 32px;
+  }
+  .games__card {
+    margin: 0px 16px;
   }
 }/*# sourceMappingURL=style.css.map */
