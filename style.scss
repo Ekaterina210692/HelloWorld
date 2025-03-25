@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+body {
+    font-family: "Montserrat";
+  }
+
+.top {
+    padding-top: 196px;
+    padding-bottom: 156px;
+    background-image: url(./img/heder-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+&-container {
+    position: relative;
+}
+
+&-img {
+    position: absolute;
+    right: -619px;
+    top: -574.29px;
+}
+&-img1 {
+    position: absolute;
+    left: -45px;
+    top: -92px;
+}
+}
+
+.header {
+    color: #202027;
+    font-family: inherit;
+
+    &__title {
+        font-family: inherit;
+        font-size: 64px;
+        max-width: 768px;
+        margin-bottom: 24px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 48px;
+        max-width: 720px;
+    }
+
+    &__button {
+        border-radius: 60px;
+        background-color: #202027;
+        color: white;
+        padding: 16px 65px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        transition: all .5s;
+        &:hover {   
+            background-color: rgb(255, 255, 255);
+            color: black;
+          }
+    }
+}
+
+.animatedStrip {
+    box-sizing: border-box;
+    background: rgb(188, 236, 48);
+    text-align: center;
+    padding: 9px;
+    overflow: hidden;
+
+&__game {
+    color: rgb(32, 32, 39);
+    text-decoration: none;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+&__img {
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px;
+}
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    margin-right: 1272px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 60px 60px 60px 60px;
+    margin-bottom: 156px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    transition: all .5s;
+
+&:hover {
+      background-color: rgb(255, 255, 255);
+      color: black;
+      cursor: pointer;
+    }
+}
+
+.games {
+&__box {
+    background: rgb(32, 32, 39);
+    background-image: url(./img/vaivai.png);
+    background-position: 17% 0%;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+}
+&__heading {
+    color: white;
+    font-size: 64px;
+    max-width: 788px;
+    padding-top: 94px;
+}
+&__link {
+    text-decoration: none;
+}
+&__text {
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 24px 493px 72px 2px;
+}
+&__numbering {
+    background-color: #0101;
+    border-radius: 30px;
+    color: rgb(32, 32, 39);
+    max-width: 108px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0px 10px 30px;
+    margin: 16px;
+}
+&__name {
+    font-size: 32px;
+    padding: 32px;
+    color: #202027;
+    text-align: left;
+    max-width: 314px;
+    margin-bottom: 24px; //*убрать когда будет блок мини-игры*/
+}
+
+&__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 63px;
+}
+&__card {
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+}
+
+.minigame {
+    border-radius: 30px;
+    background: rgb(247, 246, 246);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer {
+    background: #BDED35;
+&__text {
+    margin-top: -63px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 24px;
+    text-align: center;
+}
+}
+
+@import 'vars.scss';
+@import 'tablet.scss';
+@import 'mobile.scss';
