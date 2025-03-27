@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
-  }
+}
+
 body {
     font-family: "Montserrat";
-  }
+}
 
 .top {
     padding-top: 196px;
@@ -19,20 +21,21 @@ body {
     background-size: cover;
     overflow: hidden;
 
-&-container {
-    position: relative;
-}
+    &-container {
+        position: relative;
+    }
 
-&-img {
-    position: absolute;
-    right: -619px;
-    top: -574.29px;
-}
-&-img1 {
-    position: absolute;
-    left: -45px;
-    top: -92px;
-}
+    &-img {
+        position: absolute;
+        right: -619px;
+        top: -574.29px;
+    }
+
+    &-img1 {
+        position: absolute;
+        left: -45px;
+        top: -92px;
+    }
 }
 
 .header {
@@ -65,10 +68,11 @@ body {
         font-size: 24px;
         font-weight: 600;
         transition: all .5s;
-        &:hover {   
+
+        &:hover {
             background-color: rgb(255, 255, 255);
             color: black;
-          }
+        }
     }
 }
 
@@ -79,113 +83,127 @@ body {
     padding: 9px;
     overflow: hidden;
 
-&__game {
-    color: rgb(32, 32, 39);
-    text-decoration: none;
-    font-size: 27px;
-    text-transform: uppercase;
-    font-weight: 700; 
-}
-&__img {
-    width: 16px;
-    height: 16px;
-    margin: 0px 5px;
-}
+    &__game {
+        color: rgb(32, 32, 39);
+        text-decoration: none;
+        font-size: 27px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__img {
+        width: 16px;
+        height: 16px;
+        margin: 0px 5px;
+    }
 }
 
 .games {
-&__box {
-    background: rgb(32, 32, 39);
-    background-image: url(./img/vaivai.png);
-    background-position: 64% 0%;
-    background-repeat: no-repeat;
-    padding-bottom: 0px;
-}
-&__heading {
-    color: white;
-    font-size: 64px;
-    max-width: 788px;
-    padding-top: 94px;
-}
-&__link {
-    text-decoration: none;
-}
-&__text {
-    color: white;
-    font-size: 24px;
-    line-height: 36px;
-    padding: 24px 493px 72px 2px;
-}
-&__numbering {
-    background-color: #0101;
-    border-radius: 30px;
-    color: rgb(32, 32, 39);
-    max-width: 108px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 0px 10px 30px;
-    margin: 16px;
-}
-&__name {
-    font-size: 33px;
-    padding: 32px;
-    color: #202027;
-    text-align: left;
-    max-width: 314px;
-}
-&__names {
-    font-size: 34px;
-    padding: 32px;
-    color: #202027;
-    text-align: left;
-    max-width: 314px;
-}
-&__content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-    margin-bottom: 63px;
-}
-&__card {
-    border-radius: 30px;
-    background: rgb(247, 246, 246);
-    transition: all 0.5s;
-    &:hover {
-        transform: scale(1.1);
+    &__box {
+        background: rgb(32, 32, 39);
+        background-image: url(./img/vaivai.png);
+        background-position: 64% 0%;
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
     }
-}
+
+    &__heading {
+        color: white;
+        font-size: 64px;
+        max-width: 788px;
+        padding-top: 94px;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__text {
+        color: white;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 24px 493px 72px 2px;
+    }
+
+    &__numbering {
+        background-color: #0101;
+        border-radius: 30px;
+        color: rgb(32, 32, 39);
+        max-width: 108px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0px 10px 30px;
+        margin: 16px;
+    }
+
+    &__name {
+        font-size: 33px;
+        padding: 32px;
+        color: #202027;
+        text-align: left;
+        max-width: 314px;
+    }
+
+    &__names {
+        font-size: 34px;
+        padding: 32px;
+        color: #202027;
+        text-align: left;
+        max-width: 314px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    &__card {
+        border-radius: 30px;
+        background: rgb(247, 246, 246);
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .minigames {
     &__box {
         background: rgb(32, 32, 39);
     }
+
     &__heading {
         color: white;
         font-size: 64px;
         max-width: 788px;
-        padding: 46px 0px 72px;
+        padding: 96px 0px 72px;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: 32px;
     }
+
     &__first {
-       display: flex;
+        display: flex;
         flex-direction: row-reverse;
         align-items: center;
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__two {
         display: flex;
         align-items: center;
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__three {
         display: flex;
         flex-direction: row-reverse;
@@ -193,12 +211,14 @@ body {
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__four {
         display: flex;
         align-items: center;
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__five {
         display: flex;
         flex-direction: row-reverse;
@@ -206,6 +226,7 @@ body {
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__six {
         display: flex;
         align-items: center;
@@ -213,6 +234,7 @@ body {
         background-color: #ffffff;
         border-radius: 30px;
     }
+
     &__text {
         display: flex;
         flex-direction: column;
@@ -220,13 +242,16 @@ body {
         gap: 10px;
         padding: 32px 317px 43px 48px;
     }
+
     &__subtitle {
         font-size: 48px;
     }
+
     &__article {
         font-size: 24px;
         line-height: 32px;
     }
+
     &__but {
         border-radius: 60px;
         background-color: #202027;
@@ -239,14 +264,16 @@ body {
 }
 
 .footer {
-    background: rgb(189, 237, 53);;
-&__text {
-    font-size: 24px;
-    text-align: center;
-    font-weight: 600;
-    padding: 32px 0px 32px 0px;
-    line-height: 29px;
-}
+    background: rgb(189, 237, 53);
+    ;
+
+    &__text {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+        padding: 32px 0px 32px 0px;
+        line-height: 29px;
+    }
 }
 
 @import 'vars.scss';

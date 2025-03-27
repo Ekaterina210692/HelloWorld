@@ -140,7 +140,6 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
-  margin-bottom: 63px;
 }
 .games__card {
   border-radius: 30px;
@@ -158,7 +157,7 @@ body {
   color: white;
   font-size: 64px;
   max-width: 788px;
-  padding: 46px 0px 72px;
+  padding: 96px 0px 72px;
 }
 .minigames__content {
   display: flex;
