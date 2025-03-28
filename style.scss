@@ -265,6 +265,15 @@ body {
     &__img {
         height: 466px;
     }
+
+    &__container {
+        position: relative;
+        &_star {
+            position: absolute;
+            right: -162px;
+            top: -190px;
+        }
+    }
 }
 
 .footer {

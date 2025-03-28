@@ -231,6 +231,14 @@ body {
 .minigames__img {
   height: 466px;
 }
+.minigames__container {
+  position: relative;
+}
+.minigames__container_star {
+  position: absolute;
+  right: -162px;
+  top: -190px;
+}
 
 .footer {
   background: rgb(189, 237, 53);
