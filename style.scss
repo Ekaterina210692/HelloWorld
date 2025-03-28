@@ -261,11 +261,14 @@ body {
         font-size: 24px;
         font-weight: 600;
     }
+
+    &__img {
+        width: 100%;
+    }
 }
 
 .footer {
     background: rgb(189, 237, 53);
-    ;
 
     &__text {
         font-size: 24px;

@@ -228,6 +228,9 @@ body {
   font-size: 24px;
   font-weight: 600;
 }
+.minigames__img {
+  width: 100%;
+}
 
 .footer {
   background: rgb(189, 237, 53);
