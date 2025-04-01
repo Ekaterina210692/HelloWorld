@@ -170,40 +170,40 @@ body {
   flex-direction: row-reverse;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__two {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__three {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__four {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__five {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__six {
   display: flex;
   align-items: center;
   margin-bottom: 144px;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 45px;
 }
 .minigames__text {
   display: flex;
