@@ -211,13 +211,16 @@
 // console.log('Результат:', n);
 // console.log('Количество итераций:', num);
 
-// Задание 6
+// // Задание 6
 
-const firstFriday = 4;
-const daysInMonth = 31;
+// const firstFriday = 4;
+// const daysInMonth = 31;
 
-let currentDate = firstFriday;
-while (currentDate <= daysInMonth) {
-  alert(`Сегодня пятница, ${currentDate}-е число. Необходимо подготовить отчёт.`);
-  currentDate += 7;
-}
+// let currentDate = firstFriday;
+// while (currentDate <= daysInMonth) {
+//   alert(`Сегодня пятница, ${currentDate}-е число. Необходимо подготовить отчёт.`);
+//   currentDate += 7;
+// }
+
+
+
