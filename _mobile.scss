@@ -12,7 +12,13 @@
         display: none;
     }
 }
-    .header{
+.animatedStrip {
+    height: 51px;
+    &__game {
+        font-size: 16px;
+    }
+}
+.header{
     &__title {
         font-size: 40px;
         text-align: center;
@@ -27,12 +33,12 @@
     &__button {
         font-size: 16px;
         padding: 16px 103px;
-        margin-left: 45px;
+        margin-left: 35px;
     }
     }
-    .games 
-    {
-        &__heading {
+.games {
+    display: none;
+    &__heading {
         font-size: 40px;
         text-align: center;
         max-width: 262px;
@@ -51,4 +57,65 @@
         margin: 0px 16px;
     }
     }
+.minigames {
+    &__heading {
+        font-size: 40px;
+        line-height: 100%;
+        padding: 48px 16px;
+    }
+    &__img {
+        height: 285px;
+    }
+    &__text {
+        padding: 32px 45px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
+    &__subtitle {
+        font-size: 32px;
+    }
+    &__article {
+        font-size: 16px;
+    }
+    &__but {
+        font-size: 16px;
+        padding: 12px 93px;
+    }
+    &__first {
+        display: flex;
+        flex-direction: column;
+    }
+    &__two {
+        display:flex;
+        flex-direction: column;
+    }
+    &__three {
+        display:flex;
+        flex-direction: column;
+    }
+    &__four {
+        display:flex;
+        flex-direction: column;
+    }
+    &__five {
+        display:flex;
+        flex-direction: column;
+    }
+    &__six {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+    &__container {
+        display: none;
+    }
+    }
+.footer__text {
+    font-size: 16px;
+}
 }
