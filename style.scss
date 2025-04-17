@@ -138,7 +138,7 @@ body {
 
     &__name {
         font-size: 32px;
-        padding: 32px;
+        padding: 0px 32px 36px 18px;
         color: #202027;
         text-align: left;
         max-width: 314px;
@@ -146,7 +146,7 @@ body {
 
     &__names {
         font-size: 34px;
-        padding: 32px;
+        padding: 0px 32px 36px 18px;
         color: #202027;
         text-align: left;
         max-width: 314px;
@@ -192,14 +192,12 @@ body {
     &__first {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
         background-color: #ffffff;
         border-radius: 45px;
     }
 
     &__two {
         display: flex;
-        align-items: center;
         background-color: #ffffff;
         border-radius: 45px;
     }
@@ -207,14 +205,12 @@ body {
     &__three {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
         background-color: #ffffff;
         border-radius: 45px;
     }
 
     &__four {
         display: flex;
-        align-items: center;
         background-color: #ffffff;
         border-radius: 45px;
     }
@@ -222,14 +218,12 @@ body {
     &__five {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
         background-color: #ffffff;
         border-radius: 45px;
     }
 
     &__six {
         display: flex;
-        align-items: center;
         margin-bottom: 144px;
         background-color: #ffffff;
         border-radius: 45px;
@@ -239,8 +233,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        padding: 32px 143px 43px 48px;
+        gap: 24px;
+        padding: 48px 203px 0px 48px;
     }
 
     &__subtitle {
@@ -249,7 +243,6 @@ body {
 
     &__article {
         font-size: 24px;
-        line-height: 32px;
     }
 
     &__but {

@@ -123,14 +123,14 @@ body {
 }
 .games__name {
   font-size: 32px;
-  padding: 32px;
+  padding: 0px 32px 36px 18px;
   color: #202027;
   text-align: left;
   max-width: 314px;
 }
 .games__names {
   font-size: 34px;
-  padding: 32px;
+  padding: 0px 32px 36px 18px;
   color: #202027;
   text-align: left;
   max-width: 314px;
@@ -168,39 +168,33 @@ body {
 .minigames__first {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 45px;
 }
 .minigames__two {
   display: flex;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 45px;
 }
 .minigames__three {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 45px;
 }
 .minigames__four {
   display: flex;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 45px;
 }
 .minigames__five {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 45px;
 }
 .minigames__six {
   display: flex;
-  align-items: center;
   margin-bottom: 144px;
   background-color: #ffffff;
   border-radius: 45px;
@@ -209,15 +203,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-  padding: 32px 143px 43px 48px;
+  gap: 24px;
+  padding: 48px 203px 0px 48px;
 }
 .minigames__subtitle {
   font-size: 48px;
 }
 .minigames__article {
   font-size: 24px;
-  line-height: 32px;
 }
 .minigames__but {
   border-radius: 60px;
@@ -317,7 +310,7 @@ body {
     height: 285px;
   }
   .minigames__text {
-    padding: 32px 45px;
+    padding: 29px;
   }
   .minigames__content {
     display: flex;
