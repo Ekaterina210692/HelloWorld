@@ -170,6 +170,10 @@ body {
 .minigames {
     &__box {
         background: rgb(32, 32, 39);
+        background-image: url(./img/Star6.jpg), url(./img/Star7.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 1367px 126px, 1316px 79px;
+        background-color: rgb(32, 32, 39);
     }
 
     &__heading {
@@ -191,12 +195,14 @@ body {
         flex-direction: row-reverse;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 0px 0px;
     }
 
     &__two {
         display: flex;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 0px 0px;
     }
 
     &__three {
@@ -204,12 +210,14 @@ body {
         flex-direction: row-reverse;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 0px 0px;
     }
 
     &__four {
         display: flex;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 0px 0px;
     }
 
     &__five {
@@ -217,6 +225,7 @@ body {
         flex-direction: row-reverse;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 0px 0px;
     }
 
     &__six {
@@ -224,6 +233,7 @@ body {
         margin-bottom: 144px;
         background-color: #ffffff;
         border-radius: 45px;
+        margin: 0px 55px 144px 0px;
     }
 
     &__text {
@@ -255,15 +265,6 @@ body {
 
     &__img {
         height: 466px;
-    }
-
-    &__container {
-        position: relative;
-        &_star {
-            position: absolute;
-            right: -162px;
-            top: -190px;
-        }
     }
 }
 

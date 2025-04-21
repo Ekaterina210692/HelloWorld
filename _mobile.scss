@@ -19,7 +19,6 @@
         width: 31%;
 }
 }
-}
 .animatedStrip {
     height: 51px;
     &__game {
@@ -97,27 +96,32 @@
     &__first {
         display: flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
     &__two {
         display:flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
     &__three {
         display:flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
     &__four {
         display:flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
     &__five {
         display:flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
     &__six {
         display:flex;
         flex-direction: column;
-        margin-bottom: 48px;
+        margin: 0px 0px 48px 0px;
     }
     &__container {
         display: none;
@@ -125,4 +129,5 @@
     }
 .footer__text {
     font-size: 16px;
+}
 }
