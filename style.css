@@ -149,10 +149,18 @@ body {
 
 .minigames__box {
   background: rgb(32, 32, 39);
-  background-image: url(./img/Star6.jpg), url(./img/Star7.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 1367px 126px, 1316px 79px;
-  background-color: rgb(32, 32, 39);
+}
+.minigames__starrt {
+  position: relative;
+  top: 0px;
+  right: -1253px;
+  background-color: transparent;
+}
+.minigames__start {
+  position: relative;
+  top: -114px;
+  right: -1206px;
+  background-color: transparent;
 }
 .minigames__heading {
   color: white;
@@ -170,52 +178,46 @@ body {
   display: flex;
   flex-direction: row-reverse;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 0px 0px;
+  border-radius: 30px;
 }
 .minigames__two {
   display: flex;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 0px 0px;
+  border-radius: 30px;
 }
 .minigames__three {
   display: flex;
   flex-direction: row-reverse;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 0px 0px;
+  border-radius: 30px;
 }
 .minigames__four {
   display: flex;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 0px 0px;
+  border-radius: 30px;
 }
 .minigames__five {
   display: flex;
   flex-direction: row-reverse;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 0px 0px;
+  border-radius: 30px;
 }
 .minigames__six {
   display: flex;
   margin-bottom: 144px;
   background-color: #ffffff;
-  border-radius: 45px;
-  margin: 0px 55px 144px 0px;
+  border-radius: 30px;
 }
 .minigames__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
-  padding: 48px 203px 0px 48px;
+  gap: 36px;
+  padding: 48px 0px 48px 48px;
+  margin-right: 233px;
 }
 .minigames__subtitle {
   font-size: 48px;
-  padding-bottom: 36px;
 }
 .minigames__article {
   font-size: 24px;
@@ -230,7 +232,7 @@ body {
   font-weight: 600;
 }
 .minigames__img {
-  height: 466px;
+  width: 100%;
 }
 
 .footer {
@@ -254,15 +256,15 @@ body {
     padding-bottom: 78px;
   }
   .top-img {
-    right: -96px;
-    top: -235.14px;
+    right: -139px;
+    top: -229.14px;
     width: 74%;
     transform: rotate(-142deg);
   }
   .top-img1 {
-    left: 20.5px;
-    top: -46px;
-    width: 31%;
+    left: 28.5px;
+    top: -35px;
+    width: 21%;
   }
   .animatedStrip {
     height: 51px;
@@ -273,8 +275,7 @@ body {
   .header__title {
     font-size: 40px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
   }
   .header__text {
     font-size: 16px;
@@ -316,6 +317,7 @@ body {
   }
   .minigames__text {
     padding: 29px;
+    gap: 16px;
   }
   .minigames__content {
     display: flex;
@@ -338,7 +340,7 @@ body {
   .minigames__first {
     display: flex;
     flex-direction: column;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
   }
   .minigames__two {
     display: flex;

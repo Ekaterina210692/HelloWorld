@@ -170,10 +170,18 @@ body {
 .minigames {
     &__box {
         background: rgb(32, 32, 39);
-        background-image: url(./img/Star6.jpg), url(./img/Star7.jpg);
-        background-repeat: no-repeat, no-repeat;
-        background-position: 1367px 126px, 1316px 79px;
-        background-color: rgb(32, 32, 39);
+    }
+    &__starrt {
+        position: relative;
+        top: 0px;
+        right: -1253px;
+        background-color: transparent;
+    }
+    &__start {
+        position: relative;
+        top: -114px;
+        right: -1206px;
+        background-color: transparent;
     }
 
     &__heading {
@@ -194,59 +202,53 @@ body {
         display: flex;
         flex-direction: row-reverse;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 0px 0px;
+        border-radius: 30px;
     }
 
     &__two {
         display: flex;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 0px 0px;
+        border-radius: 30px;
     }
 
     &__three {
         display: flex;
         flex-direction: row-reverse;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 0px 0px;
+        border-radius: 30px;
     }
 
     &__four {
         display: flex;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 0px 0px;
+        border-radius: 30px;
     }
 
     &__five {
         display: flex;
         flex-direction: row-reverse;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 0px 0px;
+        border-radius: 30px;
     }
 
     &__six {
         display: flex;
         margin-bottom: 144px;
         background-color: #ffffff;
-        border-radius: 45px;
-        margin: 0px 55px 144px 0px;
+        border-radius: 30px;        
     }
 
     &__text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 24px;
-        padding: 48px 203px 0px 48px;
+        gap: 36px;
+        padding: 48px 0px 48px 48px;
+        margin-right: 233px;
     }
 
     &__subtitle {
         font-size: 48px;
-        padding-bottom: 36px;
     }
 
     &__article {
@@ -264,7 +266,7 @@ body {
     }
 
     &__img {
-        height: 466px;
+        width: 100%;
     }
 }
 
