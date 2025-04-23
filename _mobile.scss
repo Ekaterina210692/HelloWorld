@@ -68,12 +68,10 @@
         line-height: 100%;
         padding: 48px 16px;
     }
-    &__img {
-        height: 285px;
-    }
     &__text {
         padding: 29px;
         gap: 16px;
+        margin-right: 0px;
     }
     &__content {
         display: flex;
@@ -124,6 +122,9 @@
         margin: 0px 0px 48px 0px;
     }
     &__container {
+        display: none;
+    }
+    &__starCon {
         display: none;
     }
     }

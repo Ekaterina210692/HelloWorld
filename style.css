@@ -120,7 +120,7 @@ body {
 }
 .games__name {
   font-size: 32px;
-  padding: 0px 32px 36px 18px;
+  padding: 18px 32px 36px 32px;
   color: #202027;
   text-align: left;
   max-width: 314px;
@@ -153,13 +153,13 @@ body {
 .minigames__starrt {
   position: relative;
   top: 0px;
-  right: -1253px;
+  right: -1229px;
   background-color: transparent;
 }
 .minigames__start {
   position: relative;
-  top: -114px;
-  right: -1206px;
+  top: -87px;
+  right: -1108px;
   background-color: transparent;
 }
 .minigames__heading {
@@ -312,12 +312,10 @@ body {
     line-height: 100%;
     padding: 48px 16px;
   }
-  .minigames__img {
-    height: 285px;
-  }
   .minigames__text {
     padding: 29px;
     gap: 16px;
+    margin-right: 0px;
   }
   .minigames__content {
     display: flex;
@@ -368,6 +366,9 @@ body {
     margin: 0px 0px 48px 0px;
   }
   .minigames__container {
+    display: none;
+  }
+  .minigames__starCon {
     display: none;
   }
   .footer__text {
