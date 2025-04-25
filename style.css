@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .center {
@@ -93,6 +94,9 @@ body {
   background-repeat: no-repeat;
   padding-bottom: 0px;
 }
+.games__wrapper {
+  padding: 32px 32px 36px 32px;
+}
 .games__heading {
   color: white;
   font-size: 64px;
@@ -116,11 +120,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 10px 0px 10px 30px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .games__name {
   font-size: 32px;
-  padding: 18px 32px 36px 32px;
   color: #202027;
   text-align: left;
   max-width: 314px;
@@ -147,20 +150,12 @@ body {
   transform: scale(1.1);
 }
 
-.minigames__box {
-  background: rgb(32, 32, 39);
-}
-.minigames__starrt {
-  position: relative;
-  top: 0px;
-  right: -1229px;
-  background-color: transparent;
-}
-.minigames__start {
-  position: relative;
-  top: -87px;
-  right: -1108px;
-  background-color: transparent;
+.minigames {
+  background-color: rgb(32, 32, 39);
+  background-image: url(./img/Star-6.png), url(./img/Star-7.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(100% - 45px) 126px, calc(100% - 123px) 93px;
+  padding-bottom: 144px;
 }
 .minigames__heading {
   color: white;
@@ -174,53 +169,29 @@ body {
   align-items: stretch;
   gap: 32px;
 }
-.minigames__first {
+.minigames__card {
   display: flex;
+  background-color: #ffffff;
+  border-radius: 45px;
+}
+.minigames__card:nth-child(odd) {
   flex-direction: row-reverse;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-.minigames__two {
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-.minigames__three {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-.minigames__four {
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-.minigames__five {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-.minigames__six {
-  display: flex;
-  margin-bottom: 144px;
-  background-color: #ffffff;
-  border-radius: 30px;
 }
 .minigames__text {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 36px;
   padding: 48px 0px 48px 48px;
-  margin-right: 233px;
 }
 .minigames__subtitle {
   font-size: 48px;
+  max-width: 450px;
 }
 .minigames__article {
   font-size: 24px;
+  max-width: 457px;
 }
 .minigames__but {
   border-radius: 60px;
@@ -232,7 +203,7 @@ body {
   font-weight: 600;
 }
 .minigames__img {
-  width: 100%;
+  width: 50%;
 }
 
 .footer {
@@ -312,17 +283,18 @@ body {
     line-height: 100%;
     padding: 48px 16px;
   }
+  .minigames__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .minigames__card:nth-child(odd) {
+    flex-direction: column;
+  }
   .minigames__text {
     padding: 29px;
     gap: 16px;
-    margin-right: 0px;
-  }
-  .minigames__content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+    width: 100%;
+    align-items: stretch;
   }
   .minigames__subtitle {
     font-size: 32px;
@@ -335,40 +307,10 @@ body {
     font-size: 16px;
     padding: 12px 93px;
   }
-  .minigames__first {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-  }
-  .minigames__two {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px;
-  }
-  .minigames__three {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px;
-  }
-  .minigames__four {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px;
-  }
-  .minigames__five {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px;
-  }
-  .minigames__six {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 48px 0px;
+  .minigames__img {
+    width: 100%;
   }
   .minigames__container {
-    display: none;
-  }
-  .minigames__starCon {
     display: none;
   }
   .footer__text {

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .center {
@@ -103,6 +104,9 @@ body {
         background-repeat: no-repeat;
         padding-bottom: 0px;
     }
+    &__wrapper {
+        padding: 32px 32px 36px 32px;
+    }
 
     &__heading {
         color: white;
@@ -130,12 +134,11 @@ body {
         font-size: 16px;
         font-weight: 500;
         padding: 10px 0px 10px 30px;
-        margin: 16px;
+        margin-bottom:  16px;
     }
 
     &__name {
         font-size: 32px;
-        padding: 18px 32px 36px 32px;
         color: #202027;
         text-align: left;
         max-width: 314px;
@@ -168,21 +171,11 @@ body {
 }
 
 .minigames {
-    &__box {
-        background: rgb(32, 32, 39);
-    }
-    &__starrt {
-        position: relative;
-        top: 0px;
-        right: -1229px;
-        background-color: transparent;
-    }
-    &__start {
-        position: relative;
-        top: -87px;
-        right: -1108px;
-        background-color: transparent;
-    }
+    background-color: rgb(32, 32, 39);
+    background-image: url(./img/Star-6.png), url(./img/Star-7.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  calc(100% - 45px) 126px, calc(100% - 123px) 93px;
+    padding-bottom: 144px;
 
     &__heading {
         color: white;
@@ -197,62 +190,31 @@ body {
         align-items: stretch;
         gap: 32px;
     }
-
-    &__first {
-        display: flex;
+ &__card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 45px;
+    &:nth-child(odd) {
         flex-direction: row-reverse;
-        background-color: #ffffff;
-        border-radius: 30px;
     }
-
-    &__two {
-        display: flex;
-        background-color: #ffffff;
-        border-radius: 30px;
-    }
-
-    &__three {
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: #ffffff;
-        border-radius: 30px;
-    }
-
-    &__four {
-        display: flex;
-        background-color: #ffffff;
-        border-radius: 30px;
-    }
-
-    &__five {
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: #ffffff;
-        border-radius: 30px;
-    }
-
-    &__six {
-        display: flex;
-        margin-bottom: 144px;
-        background-color: #ffffff;
-        border-radius: 30px;        
-    }
-
+ }
     &__text {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 36px;
         padding: 48px 0px 48px 48px;
-        margin-right: 233px;
     }
 
     &__subtitle {
         font-size: 48px;
+        max-width: 450px;
     }
 
     &__article {
         font-size: 24px;
+        max-width: 457px;
     }
 
     &__but {
@@ -266,7 +228,7 @@ body {
     }
 
     &__img {
-        width: 100%;
+        width: 50%;
     }
 }
 

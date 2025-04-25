@@ -68,17 +68,18 @@
         line-height: 100%;
         padding: 48px 16px;
     }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(odd) {
+            flex-direction: column;
+        }
+    }
     &__text {
         padding: 29px;
         gap: 16px;
-        margin-right: 0px;
-    }
-    &__content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
+        width: 100%;
+        align-items: stretch;
     }
     &__subtitle {
         font-size: 32px;
@@ -91,40 +92,10 @@
         font-size: 16px;
         padding: 12px 93px;
     }
-    &__first {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-    &__two {
-        display:flex;
-        flex-direction: column;
-        margin: 0px 0px 0px 0px;
-    }
-    &__three {
-        display:flex;
-        flex-direction: column;
-        margin: 0px 0px 0px 0px;
-    }
-    &__four {
-        display:flex;
-        flex-direction: column;
-        margin: 0px 0px 0px 0px;
-    }
-    &__five {
-        display:flex;
-        flex-direction: column;
-        margin: 0px 0px 0px 0px;
-    }
-    &__six {
-        display:flex;
-        flex-direction: column;
-        margin: 0px 0px 48px 0px;
+    &__img {
+        width: 100%;
     }
     &__container {
-        display: none;
-    }
-    &__starCon {
         display: none;
     }
     }
