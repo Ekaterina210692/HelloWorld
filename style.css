@@ -114,19 +114,20 @@ body {
 }
 .games__numbering {
   background-color: rgba(0, 17, 0, 0.0666666667);
-  border-radius: 30px;
+  border-radius: 53px;
   color: rgb(32, 32, 39);
-  max-width: 108px;
+  width: 117px;
+  height: 36px;
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 0px 10px 30px;
+  padding: 8px 16px 10px 16px;
   margin-bottom: 16px;
 }
 .games__name {
   font-size: 32px;
   color: #202027;
   text-align: left;
-  max-width: 314px;
+  max-width: 303px;
 }
 .games__names {
   font-size: 34px;
@@ -277,6 +278,10 @@ body {
   }
   .games__card {
     margin: 0px 16px;
+  }
+  .minigames {
+    background-image: none;
+    padding-bottom: 48px;
   }
   .minigames__heading {
     font-size: 40px;

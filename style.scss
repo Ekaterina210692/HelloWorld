@@ -128,12 +128,13 @@ body {
 
     &__numbering {
         background-color: #0101;
-        border-radius: 30px;
+        border-radius: 53px;
         color: rgb(32, 32, 39);
-        max-width: 108px;
+        width: 117px;
+        height: 36px;
         font-size: 16px;
         font-weight: 500;
-        padding: 10px 0px 10px 30px;
+        padding: 8px 16px 10px 16px;
         margin-bottom:  16px;
     }
 
@@ -141,7 +142,7 @@ body {
         font-size: 32px;
         color: #202027;
         text-align: left;
-        max-width: 314px;
+        max-width: 303px;
     }
 
     &__names {
