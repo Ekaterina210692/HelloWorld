@@ -277,10 +277,10 @@ function squareNumber(number) {
 console.log(squareNumber(12));
 
 // Задание 4
-let age = prompt('Сколько Вам лет?');
+let age = +prompt('Сколько Вам лет?');
 
 function checkAge(number) {
-    return number < 0 ? 'Вы ввели неправильное значение' : number > 0 && number <= 12 ? 'Привет, друг!' : 'Добро пожаловать!';
+     alert(number < 0 ? 'Вы ввели неправильное значение' : number > 0 && number <= 12 ? 'Привет, друг!' : 'Добро пожаловать!');
 }
 console.log(checkAge(parseInt(age)));
 
