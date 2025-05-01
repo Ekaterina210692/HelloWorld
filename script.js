@@ -225,3 +225,102 @@
 //   currentDate += 7;
 // }
 
+
+// Домашнее задание №5
+
+function guessNumber() {
+    const guessRandomNumber = Math.floor(Math.random() * 100) + 1;
+    const guess = parseInt(prompt("Загадай число от 1 до 100"), 10);
+
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+        return "Пожалуйста, введите число от 1 до 100.";
+    } else if (guess === guessRandomNumber) {
+        return "Поздравляю, ты угадал!";
+    } else if (guess < guessRandomNumber) {
+        return "Попробуй больше.";
+    } else {
+        return "Попробуй меньше.";
+    }
+}
+console.log(guessNumber());
+
+// Задания на работу с кодом Задание 1
+
+function min(a, b) {
+    if (a > b) {
+        return b;
+    } else {
+        return a;
+    }
+}
+console.log(min(8, 4));
+console.log(min(6, 6));
+
+// Задание 2
+
+function isEven(number) {
+    if (number % 2 === 0) {
+        return 'Число четное';
+    } else {
+        return 'Число нечетное';
+    }
+}
+
+console.log(isEven(4));
+console.log(isEven(7));
+
+// Задание 3 
+
+function squareNumber(number) {
+    return number **2;
+}
+console.log(squareNumber(12));
+
+// Задание 4
+let age = prompt('Сколько Вам лет?');
+
+function checkAge(number) {
+    return number < 0 ? 'Вы ввели неправильное значение' : number > 0 && number <= 12 ? 'Привет, друг!' : 'Добро пожаловать!';
+}
+console.log(checkAge(parseInt(age)));
+
+// Задание 5
+
+function multiply(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+      return 'Одно или оба значения не являются числом';
+    } else {
+      return a * b;
+    }
+  }
+  console.log(multiply(5, 4));
+  console.log(multiply('привет', 4));
+
+// Задание 6
+
+function checkNumber() {
+    let guessNumber = Number(prompt('Введите любое число'));
+    if (isNaN(guessNumber)) {
+        return 'Переданный параметр не является числом';
+    } else {
+        return `n в кубе равняется ${guessNumber ** 3}`;
+    }
+}
+
+console.log(checkNumber(10));
+
+// Здание 7 
+
+function circle1(radius) {
+    const perimeter = 2 * Math.PI * radius;
+    const area = Math.PI * radius ** 2;
+    return { perimeter, area };
+  }
+console.log(circle1(1));
+
+function circle2(radius) {
+    const perimeter = 2 * Math.PI * radius;
+    const area = Math.PI * radius ** 2;
+    return { perimeter, area };
+  }
+console.log(circle2(3));
