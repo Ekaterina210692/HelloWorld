@@ -233,13 +233,13 @@ function guessNumber() {
     const guess = parseInt(prompt("Загадай число от 1 до 100"), 10);
 
     if (isNaN(guess) || guess < 1 || guess > 100) {
-        return "Пожалуйста, введите число от 1 до 100.";
+        document.getElementById('result').textContent = "Пожалуйста, введите число от 1 до 100.";
     } else if (guess === guessRandomNumber) {
-        return "Поздравляю, ты угадал!";
+        document.getElementById('result').textContent = "Поздравляю, ты угадал!";
     } else if (guess < guessRandomNumber) {
-        return "Попробуй больше.";
+        document.getElementById('result').textContent = "Попробуй больше.";
     } else {
-        return "Попробуй меньше.";
+        document.getElementById('result').textContent = "Попробуй меньше.";
     }
 }
 console.log(guessNumber());
