@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .center {
@@ -15,10 +16,7 @@ body {
 .top {
     padding-top: 196px;
     padding-bottom: 156px;
-    background-image: url(./img/heder-fon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #E1FF8F;
     overflow: hidden;
 
     &-container {
@@ -106,6 +104,9 @@ body {
         background-repeat: no-repeat;
         padding-bottom: 0px;
     }
+    &__wrapper {
+        padding: 32px 32px 36px 32px;
+    }
 
     &__heading {
         color: white;
@@ -127,26 +128,26 @@ body {
 
     &__numbering {
         background-color: #0101;
-        border-radius: 30px;
+        border-radius: 53px;
         color: rgb(32, 32, 39);
-        max-width: 108px;
+        width: 117px;
+        height: 36px;
         font-size: 16px;
         font-weight: 500;
-        padding: 10px 0px 10px 30px;
-        margin: 16px;
+        padding: 8px 16px 10px 16px;
+        margin-bottom:  16px;
     }
 
     &__name {
         font-size: 32px;
-        padding: 32px;
         color: #202027;
         text-align: left;
-        max-width: 314px;
+        max-width: 303px;
     }
 
     &__names {
         font-size: 34px;
-        padding: 32px;
+        padding: 0px 32px 36px 18px;
         color: #202027;
         text-align: left;
         max-width: 314px;
@@ -171,9 +172,11 @@ body {
 }
 
 .minigames {
-    &__box {
-        background: rgb(32, 32, 39);
-    }
+    background-color: rgb(32, 32, 39);
+    background-image: url(./img/Star-6.png), url(./img/Star-7.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  calc(100% - 45px) 126px, calc(100% - 123px) 93px;
+    padding-bottom: 144px;
 
     &__heading {
         color: white;
@@ -188,68 +191,31 @@ body {
         align-items: stretch;
         gap: 32px;
     }
-
-    &__first {
-        display: flex;
+ &__card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 45px;
+    &:nth-child(odd) {
         flex-direction: row-reverse;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 45px;
     }
-
-    &__two {
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 45px;
-    }
-
-    &__three {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 45px;
-    }
-
-    &__four {
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 45px;
-    }
-
-    &__five {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 45px;
-    }
-
-    &__six {
-        display: flex;
-        align-items: center;
-        margin-bottom: 144px;
-        background-color: #ffffff;
-        border-radius: 45px;
-    }
-
+ }
     &__text {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        padding: 32px 143px 43px 48px;
+        gap: 36px;
+        padding: 48px 0px 48px 48px;
     }
 
     &__subtitle {
         font-size: 48px;
+        max-width: 450px;
     }
 
     &__article {
         font-size: 24px;
-        line-height: 32px;
+        max-width: 457px;
     }
 
     &__but {
@@ -260,19 +226,16 @@ body {
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
+        transition: all .5s;
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
     }
 
     &__img {
-        height: 466px;
-    }
-
-    &__container {
-        position: relative;
-        &_star {
-            position: absolute;
-            right: -162px;
-            top: -190px;
-        }
+        width: 50%;
     }
 }
 
