@@ -223,6 +223,104 @@ body {
   line-height: 29px;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .top-img1 {
+    width: 12%;
+  }
+  .top-img {
+    right: -452px;
+    top: -334.14px;
+    width: 81%;
+  }
+  .games__heading {
+    font-size: 54px;
+  }
+  .games__text {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .games__content {
+    gap: 24px;
+  }
+  .games__box {
+    background-position: 39% -60%;
+  }
+  .minigames__heading {
+    font-size: 50px;
+    padding: 45px 0px 45px;
+  }
+  .minigames__text {
+    width: 45%;
+    gap: 24px;
+    padding: 24px 8px 32px 16px;
+  }
+  .minigames__subtitle {
+    font-size: 36px;
+  }
+  .minigames__article {
+    font-size: 20px;
+  }
+  .minigames__but {
+    font-size: 20px;
+    padding: 12px 54px;
+  }
+}
+@media (min-width: 768px) and (max-width: 853px) {
+  .center {
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+  .top-img {
+    right: -286px;
+    top: -538.14px;
+    width: 140%;
+    transform: rotate(-142deg);
+  }
+  .header__title {
+    font-size: 46px;
+  }
+  .header__button {
+    padding: 12px 45px;
+    font-size: 20px;
+  }
+  .header__text {
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+  .animatedStrip__game {
+    font-size: 15px;
+  }
+  .top-img1 {
+    left: -20px;
+    top: -82px;
+  }
+  .top-img {
+    right: -416px;
+    top: -297.14px;
+    width: 79%;
+  }
+  .games__content {
+    gap: 12px;
+  }
+  .games__text {
+    font-size: 19px;
+    padding: 0px;
+    margin-bottom: 32px;
+    line-height: 25px;
+  }
+  .games__heading {
+    font-size: 50px;
+    padding-top: 45px;
+  }
+  .minigames {
+    padding-bottom: 96px;
+  }
+}
 @media (max-width: 475px) {
   .center {
     padding-left: 16px;
@@ -261,7 +359,7 @@ body {
   .header__button {
     font-size: 16px;
     padding: 16px 103px;
-    margin-left: 35px;
+    margin-left: 18%;
   }
   .games {
     display: none;
@@ -325,5 +423,31 @@ body {
   }
   .footer__text {
     font-size: 16px;
+  }
+}
+@media (min-width: 466px) and (max-width: 767px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .games {
+    display: none;
+  }
+  .minigames {
+    background-image: none;
+    padding-bottom: 48px;
+  }
+  .minigames__img {
+    width: 100%;
+  }
+  .minigames__card:nth-child(odd) {
+    flex-direction: column;
+  }
+  .minigames__card:nth-child(even) {
+    flex-direction: column;
+  }
+  .minigames__text {
+    width: 100%;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
