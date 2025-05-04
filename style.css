@@ -223,6 +223,97 @@ body {
   line-height: 29px;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .top-img1 {
+    width: 12%;
+  }
+  .top-img {
+    right: -452px;
+    top: -334.14px;
+    width: 81%;
+  }
+  .games__heading {
+    font-size: 54px;
+  }
+  .games__text {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .games__content {
+    gap: 24px;
+  }
+  .games__box {
+    background-position: 39% -60%;
+  }
+  .minigames__heading {
+    font-size: 55px;
+    padding-top: 48px;
+  }
+  .minigames__text {
+    width: 45%;
+    gap: 24px;
+    padding: 24px 8px 32px 16px;
+  }
+  .minigames__subtitle {
+    font-size: 36px;
+  }
+  .minigames__article {
+    font-size: 20px;
+  }
+  .minigames__but {
+    font-size: 20px;
+    padding: 12px 54px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .header__title {
+    font-size: 58px;
+  }
+  .header__button {
+    padding: 12px 55px;
+    font-size: 24px;
+  }
+  .header__text {
+    font-size: 21px;
+    margin-bottom: 55px;
+  }
+  .animatedStrip__game {
+    font-size: 20px;
+  }
+  .top-img1 {
+    left: -20px;
+    top: -82px;
+  }
+  .top-img {
+    right: -416px;
+    top: -297.14px;
+    width: 79%;
+  }
+  .games__content {
+    gap: 12px;
+  }
+  .games__text {
+    font-size: 19px;
+    padding: 0px;
+    margin-bottom: 32px;
+    line-height: 25px;
+  }
+  .games__heading {
+    font-size: 50px;
+    padding-top: 45px;
+  }
+  .minigames {
+    padding-bottom: 96px;
+  }
+}
 @media (max-width: 475px) {
   .center {
     padding-left: 16px;
@@ -325,5 +416,22 @@ body {
   }
   .footer__text {
     font-size: 16px;
+  }
+}
+@media (min-width: 466px) and (max-width: 767px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .games {
+    display: none;
+  }
+  .minigames {
+    background-image: none;
+    padding-bottom: 48px;
+  }
+  .minigames__card {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
