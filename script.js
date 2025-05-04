@@ -326,12 +326,44 @@
 // console.log(circle2(3));
 
 
-let word = 'привет=как=дела';
-word = word.split('=');
-console.log(word);
-word = word.soft();
-console.log(word);
-word = word.join(' ');
-console.log(word);
+// Домашнее задание №6
 
+function simpleArithmetice() {
+        const operators = ['+', '-', '*', '/'];
+        const operator = operators[Math.floor(Math.random() * operators.length)];
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
 
+        let task = `${num1} ${operator} ${num2}`;
+        let correctAnswer;
+
+        switch (operator) {
+            case '+':
+                correctAnswer = num1 + num2;
+                break;
+            case '-':
+                correctAnswer = num1 - num2;
+                break;
+            case '*':
+                correctAnswer = num1 * num2;
+                break;
+            case '/':
+                correctAnswer = num1 / num2;
+                break;
+        }
+
+        document.getElementById('task').textContent = task;
+        return correctAnswer;
+    }
+
+    function checkAnswer() {
+        const correctAnswer = generateTask();
+        const userAnswer = prompt('Введите ответ:');
+        const resultElement = document.getElementById('result');
+
+        if (parseFloat(userAnswer) === correctAnswer) {
+            resultElement.textContent = 'Верно!';
+        } else {
+            resultElement.textContent = `Ошибка. Правильный ответ: ${correctAnswer}`;
+        }
+    }
