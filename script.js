@@ -180,3 +180,61 @@ for (let i = 0; i < newArr.length; i++) {
         console.log(newArr[i] + newArr[i + 1]);
     }
 }
+
+// Задание 11
+
+function integers(arr) {
+    return arr.map(item => item ** 2);
+}
+
+console.log(integers([1, 2, 3]));
+
+// Задание 12
+
+function getLength(arr) {
+    return arr.map(item => item.length);
+}
+console.log(getLength(['добро', 'зло']));
+
+// Задание 13
+
+function negativeValues(array) {
+    return array.filter(item => item < 0);
+
+}
+console.log(negativeValues([1, 2, 3, -4, 5, -6, 7, 8, 9, 10]));
+
+// Задание 14 
+
+function random() {
+    return Math.floor(Math.random() * 10);
+}
+
+const arr1 = [];
+for (let i = 0; i < 10; i++) {
+    arr.push(random());
+}
+const evenArr = [];
+for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2=== 0) {
+        evenArr.push(arr1[i]);
+    };
+    
+}
+console.log(evenArr);
+
+// Задание 15 
+
+function random() {
+    return Math.floor(Math.random() * 10);
+}
+
+const arr2 = [];
+for (let i = 0; i < 3; i++) {
+    arr.push(random());
+}
+
+console.log(arr2);
+console.log(arr2.reduce((a, b) => a + b) / arr2.length);
+
+
