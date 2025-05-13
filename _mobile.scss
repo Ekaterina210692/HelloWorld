@@ -45,6 +45,7 @@
         &__button {
             font-size: 16px;
             padding: 16px 103px;
+            margin-left: 35px;
             margin-left: 18%;
         }
     }
@@ -141,6 +142,10 @@
     .minigames {
         background-image: none;
         padding-bottom: 48px;
+        &__card {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__img {
             width: 100%;

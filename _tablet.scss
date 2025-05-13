@@ -32,6 +32,7 @@
     }
 
     .minigames__heading {
+        font-size: 55px;
         font-size: 50px;
         padding: 45px 0px 45px;
     }
@@ -56,6 +57,23 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header__title {
+        font-size: 58px;
+    }
+
+    .header__button {
+        padding: 12px 55px;
+        font-size: 24px;
+    }
+
+    .header__text {
+        font-size: 21px;
 @media (min-width: 768px) and (max-width: 853px) {
     .center {
         padding-left: 32px;
@@ -83,6 +101,7 @@
     }
 
     .animatedStrip__game {
+        font-size: 20px;
         font-size: 15px;
     }
 
