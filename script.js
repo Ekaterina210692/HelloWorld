@@ -222,3 +222,213 @@ for (let i = 0; i < 3; i++) {
 console.log(arr2);
 console.log(arr2.reduce((a, b) => a + b) / arr2.length);
 
+//Домашнее задание №7
+
+// Игра 3
+
+function reverseText() {
+  const inputText = prompt('Введите текст, который нужно перевернуть');
+  if (inputText !== null) {
+    const reversedText = inputText.split('').reverse().join('');
+    document.getElementById('result').textContent = reversedText.toLowerCase();
+  }
+}
+
+// Игра 4
+
+const quiz = [
+  {
+    question: "Какой цвет небо?",
+    options: ["1. Красный", "2. Синий", "3. Зеленый"],
+    correctAnswer: 2
+  },
+  {
+    question: "Сколько дней в неделе?",
+    options: ["1. Шесть", "2. Семь", "3. Восемь"],
+    correctAnswer: 2
+  },
+  {
+    question: "Сколько у человека пальцев на одной руке?",
+    options: ["1. Четыре", "2. Пять", "3. Шесть"],
+    correctAnswer: 2
+  }
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function loadQuestion() {
+  const question = quiz[currentQuestionIndex].question;
+  const options = quiz[currentQuestionIndex].options;
+  let promptMessage = `${question}\n\n`;
+  options.forEach((option, index) => {
+    promptMessage += `${index + 1}. ${option}\n`;
+  });
+
+  const selectedOption = prompt(promptMessage);
+  if (selectedOption !== null) {
+    const chosenIndex = parseInt(selectedOption) - 1;
+    checkAnswer(options[chosenIndex]);
+  } else {
+    alert("Игра завершена. Вы не ответили на все вопросы.");
+    showFinalScore();
+  }
+}
+
+function checkAnswer(selectedOption) {
+  score = selectedOption === quiz[currentQuestionIndex].correctAnswer ? score + 1 : score;
+  currentQuestionIndex++;
+  currentQuestionIndex < quiz.length ? loadQuestion() : showFinalScore();
+}
+
+function showFinalScore() {
+  alert(`Вы правильно ответили на ${score} вопросов.`);
+}
+
+loadQuestion();
+
+// Работа с кодом
+// задние 1
+
+const js = prompt('Весит груша нельзя скушать?');
+
+const jsAnswer = 'лампочка';
+
+if (js.toLocaleUpperCase() === jsAnswer.toLocaleUpperCase()) {
+  console.log('Правильно!');
+} else {
+  console.log('Упс, ошибка попробуй еще');
+}
+
+// задние 2
+
+function printProducts() {
+  const products = ['хлеб', 'молоко', 'сыр', 'огурцы', 'помидоры', 'кефир'];
+  const bakeryProduct = 'хлеб';
+
+  products.forEach(product => {
+    if (product.toLowerCase().includes(bakeryProduct.toLowerCase())) {
+      console.log(product);
+    }
+  });
+}
+
+// задние 3
+
+Math.ceil(32.58884);
+console.log(33);
+Math.floor(32.58884);
+console.log(32);
+Math.round(32.58884);
+console.log(33);
+
+// задние 4
+
+const Numbering = [52, 53, 49, 77, 21, 32];
+
+const minNumb = Math.min(...Numbering);
+console.log(minNumb);
+
+const max = Math.max(...Numbering);
+console.log(max);
+
+// задние 5
+
+function random() {
+  const randomNum = Math.random() * 10 + 1;
+
+  if (randomNum >= 1 && randomNum <= 10) {
+    console.log(randomNum);
+  } else {
+    console.log('Попробуй еще');
+  }
+}
+
+// задние 6
+
+function randomArray(maxNumber) {
+  const arrayLength = Math.floor(maxNumber / 2);
+  const emptyArray = [];
+
+  for (let i = 0; i < arrayLength; i++) {
+    const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
+    emptyArray.push(randomNumber);
+  }
+
+  return emptyArray;
+}
+
+// задние 7
+
+function integers() {
+  const integetsNumb = [41, 42];
+  const minNumb = Math.min(...Numbering);
+  console.log(minNumb);
+
+  const max = Math.max(...Numbering);
+  console.log(max)
+
+}
+
+// задние 8
+
+function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const result = getRandomInteger(41.345, 43.4533);
+console.log(result);
+
+const randomNumber = Math.random() * 10;
+const resultCeil = Math.ceil(randomNumber);
+console.log(`Случайное число: ${randomNumber}, ${resultCeil}`);
+
+// задние 9
+
+const Date = new Date();
+
+
+// задние 10
+
+const currentDate = new Date();
+
+currentDate.setDate(currentDate.getDate() + 73);
+
+console.log(currentDate);
+
+// pflfybt 11
+
+function russDateFormat() {
+  const now = new Date;
+  const month = {
+    "January": "января",
+    "February": "февраля",
+    "March": "марта",
+    "April": "апреля",
+    "May": "мая",
+    "June": "июня",
+    "July": "июля",
+    "August": "августа",
+    "September": "сентября",
+    "October": "октября",
+    "November": "ноября",
+    "December": "декабря"
+  }
+
+  const dayWeek = {
+    "Monday": "понедельник",
+    "Tuesday": "вторник",
+    "Wednesday": "среда",
+    "Thursday": "четверг",
+    "Friday": "пятница",
+    "Saturday": "суббота",
+    "Sunday": "воскресенье"
+  }
+  console.log ("now");
+};
+  const day = now.getDate();
+  const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
+  const year = now.getFullYear();
+  const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
+
+  console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
