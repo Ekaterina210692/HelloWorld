@@ -161,8 +161,9 @@ console.log(mergedArra);
 
 const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let i = 0; i < newArr.length; i++) {
-  if (newArr[i = 1]) {
+  if (newArr[i] === 1) {
     console.log(newArr[i] + newArr[i + 1]);
+    break;
   }
 }
 
@@ -240,7 +241,7 @@ const quiz = [
   {
     question: "Какой цвет небо?",
     options: ["1. Красный", "2. Синий", "3. Зеленый"],
-    correctAnswer: 2
+    correctAnswer: 2 // номер правильного ответа
   },
   {
     question: "Сколько дней в неделе?",
@@ -261,6 +262,7 @@ function loadQuestion() {
   const question = quiz[currentQuestionIndex].question;
   const options = quiz[currentQuestionIndex].options;
   let promptMessage = `${question}\n\n`;
+
   options.forEach((option, index) => {
     promptMessage += `${index + 1}. ${option}\n`;
   });
@@ -268,24 +270,28 @@ function loadQuestion() {
   const selectedOption = prompt(promptMessage);
   if (selectedOption !== null) {
     const chosenIndex = parseInt(selectedOption) - 1;
-    checkAnswer(options[chosenIndex]);
+    checkAnswer(chosenIndex);
   } else {
-    console.log("Игра завершена. Вы не ответили на все вопросы.");
+    alert("Игра завершена. Вы не ответили на все вопросы.");
     showFinalScore();
   }
 }
 
-function checkAnswer(selectedOption) {
-  score = selectedOption === quiz[currentQuestionIndex].correctAnswer ? score + 1 : score;
+function checkAnswer(chosenIndex) {
+  if (chosenIndex === quiz[currentQuestionIndex].correctAnswer - 1) {
+    score++;
+  }
   currentQuestionIndex++;
-  currentQuestionIndex < quiz.length ? loadQuestion() : showFinalScore();
+  if (currentQuestionIndex < quiz.length) {
+    loadQuestion();
+  } else {
+    showFinalScore();
+  }
 }
 
 function showFinalScore() {
-  console.log(`Вы правильно ответили на ${score} вопросов.`);
+  alert(`Правильно ${score} из ${quiz.length}`);
 }
-
-loadQuestion();
 
 // Работа с кодом
 // задние 1
