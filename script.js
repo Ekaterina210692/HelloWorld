@@ -73,16 +73,16 @@ function playGame() {
   const userAnswer = prompt(`Решите задачу: ${task}`);
 
   if (userAnswer === null) {
-    alert('Игра отменена.');
+    console.log('Игра отменена.');
     return;
   }
 
   const parsedUserAnswer = parseFloat(userAnswer);
 
   if (parsedUserAnswer === result) {
-    alert('Правильно!');
+    console.log('Правильно!');
   } else {
-    alert(`Неправильно. Правильный ответ: ${result}`);
+    console.log(`Неправильно. Правильный ответ: ${result}`);
   }
 }
 
@@ -141,7 +141,7 @@ let numb = prompt('угадай число')
 if (guessNumb.includes(Number(numb))) {
   alert('«Угадал»');
 } else {
-  alert('«Не угадал»');
+  console.log('«Не угадал»');
 
 }
 
@@ -270,7 +270,7 @@ function loadQuestion() {
     const chosenIndex = parseInt(selectedOption) - 1;
     checkAnswer(options[chosenIndex]);
   } else {
-    alert("Игра завершена. Вы не ответили на все вопросы.");
+    console.log("Игра завершена. Вы не ответили на все вопросы.");
     showFinalScore();
   }
 }
@@ -282,7 +282,7 @@ function checkAnswer(selectedOption) {
 }
 
 function showFinalScore() {
-  alert(`Вы правильно ответили на ${score} вопросов.`);
+  console.log(`Вы правильно ответили на ${score} вопросов.`);
 }
 
 loadQuestion();
@@ -424,11 +424,11 @@ function russDateFormat() {
     "Saturday": "суббота",
     "Sunday": "воскресенье"
   }
-  console.log ("now");
+  console.log("now");
 };
-  const day = now.getDate();
-  const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
-  const year = now.getFullYear();
-  const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
+const day = now.getDate();
+const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
+const year = now.getFullYear();
+const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
 
-  console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
+console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
