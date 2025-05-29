@@ -198,7 +198,7 @@ function random() {
 
 const arr1 = [];
 for (let i = 0; i < 10; i++) {
-  arr.push(random());
+  arr1.push(random());
 }
 const evenArr = [];
 for (let i = 0; i < arr1.length; i++) {
@@ -217,7 +217,7 @@ function random() {
 
 const arr2 = [];
 for (let i = 0; i < 3; i++) {
-  arr.push(random());
+  arr2.push(random());
 }
 
 console.log(arr2);
@@ -228,10 +228,12 @@ console.log(arr2.reduce((a, b) => a + b) / arr2.length);
 // Игра 3
 
 function reverseText() {
-  const inputText = prompt('Введите текст, который нужно перевернуть');
-  if (inputText !== null) {
+  const inputText = prompt("Введите текст:");
+  if (inputText) {
     const reversedText = inputText.split('').reverse().join('');
-    document.getElementById('result').textContent = reversedText.toLowerCase();
+    console.log(reversedText);
+  } else {
+    console.log("Вы не ввели текст.");
   }
 }
 
@@ -240,57 +242,57 @@ function reverseText() {
 const quiz = [
   {
     question: "Какой цвет небо?",
-    options: ["1. Красный", "2. Синий", "3. Зеленый"],
-    correctAnswer: 2 // номер правильного ответа
+    options: ["Красный", "Синий", "Зеленый"],
+    correctAnswer: 2
   },
   {
     question: "Сколько дней в неделе?",
-    options: ["1. Шесть", "2. Семь", "3. Восемь"],
+    options: ["Шесть", "Семь", "Восемь"],
     correctAnswer: 2
   },
   {
     question: "Сколько у человека пальцев на одной руке?",
-    options: ["1. Четыре", "2. Пять", "3. Шесть"],
+    options: ["Четыре", "Пять", "Шесть"],
     correctAnswer: 2
   }
 ];
-
 let currentQuestionIndex = 0;
 let score = 0;
 
 function loadQuestion() {
-  const question = quiz[currentQuestionIndex].question;
-  const options = quiz[currentQuestionIndex].options;
-  let promptMessage = `${question}\n\n`;
-
-  options.forEach((option, index) => {
-    promptMessage += `${index + 1}. ${option}\n`;
+  const question = quiz[currentQuestionIndex];
+  document.getElementById('question-display').textContent = question.question;
+  const optionsDisplay = document.getElementById('options-display');
+  optionsDisplay.innerHTML = '';
+  question.options.forEach((option, index) => {
+    const li = document.createElement('li');
+    li.textContent = option;
+    li.addEventListener('click', () => {
+      selectOption(index);
+    });
+    optionsDisplay.appendChild(li);
   });
-
-  const selectedOption = prompt(promptMessage);
-  if (selectedOption !== null) {
-    const chosenIndex = parseInt(selectedOption) - 1;
-    checkAnswer(chosenIndex);
-  } else {
-    alert("Игра завершена. Вы не ответили на все вопросы.");
-    showFinalScore();
-  }
 }
 
-function checkAnswer(chosenIndex) {
-  if (chosenIndex === quiz[currentQuestionIndex].correctAnswer - 1) {
+function selectOption(selectedIndex) {
+  const correctAnswer = quiz[currentQuestionIndex].correctAnswer;
+  if (selectedIndex === correctAnswer) {
     score++;
+    document.getElementById('result').textContent = 'Правильно!';
+  } else {
+    document.getElementById('result').textContent = 'Неправильно.';
   }
   currentQuestionIndex++;
   if (currentQuestionIndex < quiz.length) {
     loadQuestion();
   } else {
-    showFinalScore();
+    endQuiz();
   }
 }
 
-function showFinalScore() {
-  alert(`Правильно ${score} из ${quiz.length}`);
+function endQuiz() {
+  document.getElementById('question-display').textContent = `Ваша оценка: ${score} из ${quiz.length}`;
+  document.getElementById('result').textContent = '';
 }
 
 // Работа с кодом
@@ -331,11 +333,12 @@ console.log(33);
 // задние 4
 
 const Numbering = [52, 53, 49, 77, 21, 32];
-
 const minNumb = Math.min(...Numbering);
+
 console.log(minNumb);
 
 const max = Math.max(...Numbering);
+
 console.log(max);
 
 // задние 5
@@ -343,11 +346,7 @@ console.log(max);
 function random() {
   const randomNum = Math.random() * 10 + 1;
 
-  if (randomNum >= 1 && randomNum <= 10) {
-    console.log(randomNum);
-  } else {
-    console.log('Попробуй еще');
-  }
+  console.log(randomNum);
 }
 
 // задние 6
@@ -367,13 +366,12 @@ function randomArray(maxNumber) {
 // задние 7
 
 function integers() {
-  const integetsNumb = [41, 42];
-  const minNumb = Math.min(...Numbering);
+  const integersNumb = [41, 42];
+  const minNumb = Math.min(...integersNumb);
   console.log(minNumb);
 
-  const max = Math.max(...Numbering);
-  console.log(max)
-
+  const max = Math.max(...integersNumb);
+  console.log(max);
 }
 
 // задние 8
@@ -391,8 +389,8 @@ console.log(`Случайное число: ${randomNumber}, ${resultCeil}`);
 
 // задние 9
 
-const Date = new Date();
-
+const date = new Date();
+console.log(date);
 
 // задние 10
 
@@ -402,10 +400,10 @@ currentDate.setDate(currentDate.getDate() + 73);
 
 console.log(currentDate);
 
-// pflfybt 11
+// задание 11
 
 function russDateFormat() {
-  const now = new Date;
+  const now = new Date();
   const month = {
     "January": "января",
     "February": "февраля",
@@ -429,12 +427,13 @@ function russDateFormat() {
     "Friday": "пятница",
     "Saturday": "суббота",
     "Sunday": "воскресенье"
-  }
-  console.log("now");
-};
-const day = now.getDate();
-const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
-const year = now.getFullYear();
-const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
+  };
+  const day = now.getDate();
+  const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
+  const year = now.getFullYear();
+  const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
 
-console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
+  console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
+}
+
+russDateFormat();
