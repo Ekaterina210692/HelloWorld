@@ -231,9 +231,9 @@ function reverseText() {
   const inputText = prompt("Введите текст:");
   if (inputText) {
     const reversedText = inputText.split('').reverse().join('');
-    console.log(reversedText);
+    alert(reversedText);
   } else {
-    console.log("Вы не ввели текст.");
+    alert("Вы не ввели текст.");
   }
 }
 
@@ -261,26 +261,26 @@ let score = 0;
 
 function loadQuestion() {
   const question = quiz[currentQuestionIndex];
-  document.getElementById('question-display').textContent = question.question;
-  const optionsDisplay = document.getElementById('options-display');
-  optionsDisplay.innerHTML = '';
-  question.options.forEach((option, index) => {
-    const li = document.createElement('li');
-    li.textContent = option;
-    li.addEventListener('click', () => {
-      selectOption(index);
-    });
-    optionsDisplay.appendChild(li);
+  const questionText = question.question;
+  alert(questionText);
+
+  const options = question.options;
+  let optionsText = '';
+  options.forEach((option, index) => {
+    optionsText += `${index}: ${option}\n`;
   });
+
+  const selectedIndex = parseInt(prompt(optionsText));
+  selectOption(selectedIndex);
 }
 
 function selectOption(selectedIndex) {
   const correctAnswer = quiz[currentQuestionIndex].correctAnswer;
   if (selectedIndex === correctAnswer) {
     score++;
-    document.getElementById('result').textContent = 'Правильно!';
+    alert('Правильно!');
   } else {
-    document.getElementById('result').textContent = 'Неправильно.';
+    alert('Неправильно.');
   }
   currentQuestionIndex++;
   if (currentQuestionIndex < quiz.length) {
@@ -291,9 +291,10 @@ function selectOption(selectedIndex) {
 }
 
 function endQuiz() {
-  document.getElementById('question-display').textContent = `Ваша оценка: ${score} из ${quiz.length}`;
-  document.getElementById('result').textContent = '';
+  alert(`Вы набрали ${score} из ${quiz.length} баллов.`);
 }
+
+loadQuestion(); 
 
 // Работа с кодом
 // задние 1
@@ -365,14 +366,12 @@ function randomArray(maxNumber) {
 
 // задние 7
 
-function integers() {
-  const integersNumb = [41, 42];
-  const minNumb = Math.min(...integersNumb);
-  console.log(minNumb);
-
-  const max = Math.max(...integersNumb);
-  console.log(max);
+function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+const randomNumbe = getRandomInteger(1, 10);
+console.log(randomNumbe);
 
 // задние 8
 
