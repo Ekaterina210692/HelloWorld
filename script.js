@@ -260,18 +260,22 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function loadQuestion() {
-  const question = quiz[currentQuestionIndex];
-  const questionText = question.question;
-  alert(questionText);
+  if (currentQuestionIndex < quiz.length) {
+    const question = quiz[currentQuestionIndex];
+    const questionText = question.question;
+    alert(questionText);
 
-  const options = question.options;
-  let optionsText = '';
-  options.forEach((option, index) => {
-    optionsText += `${index}: ${option}\n`;
-  });
+    const options = question.options;
+    let optionsText = '';
+    options.forEach((option, index) => {
+      optionsText += `${index}: ${option}\n`;
+    });
 
-  const selectedIndex = parseInt(prompt(optionsText));
-  selectOption(selectedIndex);
+    const selectedIndex = parseInt(prompt(optionsText));
+    selectOption(selectedIndex);
+  } else {
+    endQuiz();
+  }
 }
 
 function selectOption(selectedIndex) {
@@ -283,18 +287,14 @@ function selectOption(selectedIndex) {
     alert('Неправильно.');
   }
   currentQuestionIndex++;
-  if (currentQuestionIndex < quiz.length) {
-    loadQuestion();
-  } else {
-    endQuiz();
-  }
+  loadQuestion();
 }
 
 function endQuiz() {
   alert(`Вы набрали ${score} из ${quiz.length} баллов.`);
 }
 
-loadQuestion(); 
+loadQuestion();
 
 // Работа с кодом
 // задние 1
