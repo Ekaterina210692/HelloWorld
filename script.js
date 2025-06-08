@@ -29,9 +29,9 @@ function guessNumber() {
 console.log(guessNumber());
 
 
-// // // Домашнее задание №6
+// Домашнее задание №6
 
-// // // Игра 2
+// Игра 2
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -239,65 +239,46 @@ function reverseText() {
 
 // Игра 4
 
-const quiz = [
-  {
-    question: "Какой цвет небо?",
-    options: ["Красный", "Синий", "Зеленый"],
-    correctAnswer: 2
-  },
-  {
-    question: "Сколько дней в неделе?",
-    options: ["Шесть", "Семь", "Восемь"],
-    correctAnswer: 2
-  },
-  {
-    question: "Сколько у человека пальцев на одной руке?",
-    options: ["Четыре", "Пять", "Шесть"],
-    correctAnswer: 2
-  }
-];
-let currentQuestionIndex = 0;
-let score = 0;
+let correctCount = 0;
 
 function loadQuestion() {
-  if (currentQuestionIndex < quiz.length) {
-    const question = quiz[currentQuestionIndex];
-    const questionText = question.question;
-    alert(questionText);
 
-    const options = question.options;
-    let optionsText = '';
-    options.forEach((option, index) => {
-      optionsText += `${index}: ${option}\n`;
+  const quiz = [
+    {
+      question: "Какой цвет небо?",
+      options: ["1.Красный", "2.Синий", "3.Зеленый"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1.Шесть", "2.Семь", "3.Восемь"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1.Четыре", "2.Пять", "3.Шесть"],
+      correctAnswer: 2
+    }
+  ];
+
+  quiz.forEach((question) => {
+    let questionText = `${question.question}\n`;
+    question.options.forEach((option, index) => {
+      questionText += `${index + 1}. ${option}\n`;
     });
 
-    const selectedIndex = parseInt(prompt(optionsText));
-    selectOption(selectedIndex);
-  } else {
-    endQuiz();
-  }
-}
+    const userAnswer = parseInt(prompt(questionText));
 
-function selectOption(selectedIndex) {
-  const correctAnswer = quiz[currentQuestionIndex].correctAnswer;
-  if (selectedIndex === correctAnswer) {
-    score++;
-    alert('Правильно!');
-  } else {
-    alert('Неправильно.');
-  }
-  currentQuestionIndex++;
-  loadQuestion();
-}
+    if (userAnswer === question.correctAnswer) {
+      correctCount++;
+    }
+  });
 
-function endQuiz() {
-  alert(`Вы набрали ${score} из ${quiz.length} баллов.`);
+  alert(`Вы правильно ответили на ${correctCount} вопросов из ${quiz.length}`);
 }
-
-loadQuestion();
 
 // Работа с кодом
-// задние 1
+// задание 1
 
 const js = prompt('Весит груша нельзя скушать?');
 
@@ -309,7 +290,7 @@ if (js.toLocaleUpperCase() === jsAnswer.toLocaleUpperCase()) {
   console.log('Упс, ошибка попробуй еще');
 }
 
-// задние 2
+// задание 2
 
 function printProducts() {
   const products = ['хлеб', 'молоко', 'сыр', 'огурцы', 'помидоры', 'кефир'];
@@ -322,7 +303,7 @@ function printProducts() {
   });
 }
 
-// задние 3
+// задание 3
 
 Math.ceil(32.58884);
 console.log(33);
@@ -331,7 +312,7 @@ console.log(32);
 Math.round(32.58884);
 console.log(33);
 
-// задние 4
+// задание 4
 
 const Numbering = [52, 53, 49, 77, 21, 32];
 const minNumb = Math.min(...Numbering);
@@ -342,7 +323,7 @@ const max = Math.max(...Numbering);
 
 console.log(max);
 
-// задние 5
+// задание 5
 
 function random() {
   const randomNum = Math.random() * 10 + 1;
@@ -350,7 +331,7 @@ function random() {
   console.log(randomNum);
 }
 
-// задние 6
+// задание 6
 
 function randomArray(maxNumber) {
   const arrayLength = Math.floor(maxNumber / 2);
@@ -364,7 +345,7 @@ function randomArray(maxNumber) {
   return emptyArray;
 }
 
-// задние 7
+// задание 7
 
 function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -373,7 +354,7 @@ function getRandomInteger(min, max) {
 const randomNumbe = getRandomInteger(1, 10);
 console.log(randomNumbe);
 
-// задние 8
+// задание 8
 
 function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -386,12 +367,12 @@ const randomNumber = Math.random() * 10;
 const resultCeil = Math.ceil(randomNumber);
 console.log(`Случайное число: ${randomNumber}, ${resultCeil}`);
 
-// задние 9
+// задание 9
 
 const date = new Date();
 console.log(date);
 
-// задние 10
+// задание 10
 
 const currentDate = new Date();
 
