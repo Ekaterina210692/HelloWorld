@@ -29,9 +29,9 @@ function guessNumber() {
 console.log(guessNumber());
 
 
-// // // Домашнее задание №6
+// Домашнее задание №6
 
-// // // Игра 2
+// Игра 2
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -73,16 +73,16 @@ function playGame() {
   const userAnswer = prompt(`Решите задачу: ${task}`);
 
   if (userAnswer === null) {
-    alert('Игра отменена.');
+    console.log('Игра отменена.');
     return;
   }
 
   const parsedUserAnswer = parseFloat(userAnswer);
 
   if (parsedUserAnswer === result) {
-    alert('Правильно!');
+    console.log('Правильно!');
   } else {
-    alert(`Неправильно. Правильный ответ: ${result}`);
+    console.log(`Неправильно. Правильный ответ: ${result}`);
   }
 }
 
@@ -141,7 +141,7 @@ let numb = prompt('угадай число')
 if (guessNumb.includes(Number(numb))) {
   alert('«Угадал»');
 } else {
-  alert('«Не угадал»');
+  console.log('«Не угадал»');
 
 }
 
@@ -161,8 +161,9 @@ console.log(mergedArra);
 
 const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let i = 0; i < newArr.length; i++) {
-  if (newArr[i = 1]) {
+  if (newArr[i] === 1) {
     console.log(newArr[i] + newArr[i + 1]);
+    break;
   }
 }
 
@@ -197,7 +198,7 @@ function random() {
 
 const arr1 = [];
 for (let i = 0; i < 10; i++) {
-  arr.push(random());
+  arr1.push(random());
 }
 const evenArr = [];
 for (let i = 0; i < arr1.length; i++) {
@@ -216,9 +217,203 @@ function random() {
 
 const arr2 = [];
 for (let i = 0; i < 3; i++) {
-  arr.push(random());
+  arr2.push(random());
 }
 
 console.log(arr2);
 console.log(arr2.reduce((a, b) => a + b) / arr2.length);
 
+//Домашнее задание №7
+
+// Игра 3
+
+function reverseText() {
+  const inputText = prompt("Введите текст:");
+  if (inputText) {
+    const reversedText = inputText.split('').reverse().join('');
+    alert(reversedText);
+  } else {
+    alert("Вы не ввели текст.");
+  }
+}
+
+// Игра 4
+
+let correctCount = 0;
+
+function loadQuestion() {
+
+  const quiz = [
+    {
+      question: "Какой цвет небо?",
+      options: ["1.Красный", "2.Синий", "3.Зеленый"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1.Шесть", "2.Семь", "3.Восемь"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1.Четыре", "2.Пять", "3.Шесть"],
+      correctAnswer: 2
+    }
+  ];
+
+  quiz.forEach((question) => {
+    let questionText = `${question.question}\n`;
+    question.options.forEach((option, index) => {
+      questionText += `${index + 1}. ${option}\n`;
+    });
+
+    const userAnswer = parseInt(prompt(questionText));
+
+    if (userAnswer === question.correctAnswer) {
+      correctCount++;
+    }
+  });
+
+  alert(`Вы правильно ответили на ${correctCount} вопросов из ${quiz.length}`);
+}
+
+// Работа с кодом
+// задание 1
+
+const js = prompt('Весит груша нельзя скушать?');
+
+const jsAnswer = 'лампочка';
+
+if (js.toLocaleUpperCase() === jsAnswer.toLocaleUpperCase()) {
+  console.log('Правильно!');
+} else {
+  console.log('Упс, ошибка попробуй еще');
+}
+
+// задание 2
+
+function printProducts() {
+  const products = ['хлеб', 'молоко', 'сыр', 'огурцы', 'помидоры', 'кефир'];
+  const bakeryProduct = 'хлеб';
+
+  products.forEach(product => {
+    if (product.toLowerCase().includes(bakeryProduct.toLowerCase())) {
+      console.log(product);
+    }
+  });
+}
+
+// задание 3
+
+Math.ceil(32.58884);
+console.log(33);
+Math.floor(32.58884);
+console.log(32);
+Math.round(32.58884);
+console.log(33);
+
+// задание 4
+
+const Numbering = [52, 53, 49, 77, 21, 32];
+const minNumb = Math.min(...Numbering);
+
+console.log(minNumb);
+
+const max = Math.max(...Numbering);
+
+console.log(max);
+
+// задание 5
+
+function random() {
+  const randomNum = Math.random() * 10 + 1;
+
+  console.log(randomNum);
+}
+
+// задание 6
+
+function randomArray(maxNumber) {
+  const arrayLength = Math.floor(maxNumber / 2);
+  const emptyArray = [];
+
+  for (let i = 0; i < arrayLength; i++) {
+    const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
+    emptyArray.push(randomNumber);
+  }
+
+  return emptyArray;
+}
+
+// задание 7
+
+function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const randomNumbe = getRandomInteger(1, 10);
+console.log(randomNumbe);
+
+// задание 8
+
+function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const result = getRandomInteger(41.345, 43.4533);
+console.log(result);
+
+const randomNumber = Math.random() * 10;
+const resultCeil = Math.ceil(randomNumber);
+console.log(`Случайное число: ${randomNumber}, ${resultCeil}`);
+
+// задание 9
+
+const date = new Date();
+console.log(date);
+
+// задание 10
+
+const currentDate = new Date();
+
+currentDate.setDate(currentDate.getDate() + 73);
+
+console.log(currentDate);
+
+// задание 11
+
+function russDateFormat() {
+  const now = new Date();
+  const month = {
+    "January": "января",
+    "February": "февраля",
+    "March": "марта",
+    "April": "апреля",
+    "May": "мая",
+    "June": "июня",
+    "July": "июля",
+    "August": "августа",
+    "September": "сентября",
+    "October": "октября",
+    "November": "ноября",
+    "December": "декабря"
+  }
+
+  const dayWeek = {
+    "Monday": "понедельник",
+    "Tuesday": "вторник",
+    "Wednesday": "среда",
+    "Thursday": "четверг",
+    "Friday": "пятница",
+    "Saturday": "суббота",
+    "Sunday": "воскресенье"
+  };
+  const day = now.getDate();
+  const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
+  const year = now.getFullYear();
+  const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
+
+  console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
+}
+
+russDateFormat();
