@@ -336,7 +336,7 @@ function random() {
 // задание 6
 
 function randomArray(Numbeer) {
-    return Array.from({length: Math.floor(Numbeer / 2)}, () => (Math.random() * Numbeer));
+    return Array.from({ length: Math.floor(Numbeer / 2) }, () => (Math.random() * Numbeer));
 }
 console.log(randomArray(10));
 
@@ -463,30 +463,30 @@ console.log(people);
 // задание 2
 
 function isPositive(num) {
-  return num > 0;
+    return num > 0;
 }
 
 function isMale(person) {
-  return person.gender === 'male';
+    return person.gender === 'male';
 }
 
 function filter(array, ruleFunction) {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    if (ruleFunction(array[i])) {
-      result.push(array[i]);
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            result.push(array[i]);
+        }
     }
-  }
-  return result;
+    return result;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
 const peoples = [
-  {name: 'Глеб', gender: 'male'},
-  {name: 'Анна', gender: 'female'},
-  {name: 'Олег', gender: 'male'},
-  {name: 'Оксана', gender: 'female'}
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
 ];
 
 console.log(filter(peoples, isMale));
@@ -494,22 +494,22 @@ console.log(filter(peoples, isMale));
 // задание 3
 
 const intervalId = setInterval(() => {
-  console.log('today');
+    console.log('today');
 }, 3000);
 
 setTimeout(() => {
-  clearInterval(intervalId);
-  console.log('30 секунд прошло');
+    clearInterval(intervalId);
+    console.log('30 секунд прошло');
 }, 30000);
 
 // задание 4
 function delayForSecond(callback) {
     setTimeout(() => {
-   callback();
-}, 1000);
+        callback();
+    }, 1000);
 }
 delayForSecond(() => {
-   console.log('Привет, Глеб!');
+    console.log('Привет, Глеб!');
 });
 
 // задание 5
@@ -517,15 +517,13 @@ delayForSecond(() => {
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
+        if (cb) { cb(); }
     }, 1000)
 }
 
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);4
+function sayHi(name) {
+    console.log(`Привет, ${name}!`); 4
 }
 
 delayForSecond(() => sayHi('Глеб'));
-
-// Домашняя работа №9
 
