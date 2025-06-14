@@ -526,3 +526,6 @@ function sayHi (name) {
 }
 
 delayForSecond(() => sayHi('Глеб'));
+
+// Домашняя работа №9
+
