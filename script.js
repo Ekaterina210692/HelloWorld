@@ -1,30 +1,28 @@
-
-
 // Домашнее задание №5
 
 // Игра 1
 
 function guessNumber() {
-  const guessRandomNumber = Math.floor(Math.random() * 100) + 1;
-  const operations = ['умножил на 3', 'прибавил 6'];
-  const operationIndex = Math.floor(Math.random() * operations.length);
-  let resultNumber;
+    const guessRandomNumber = Math.floor(Math.random() * 100) + 1;
+    const operations = ['умножил на 3', 'прибавил 6'];
+    const operationIndex = Math.floor(Math.random() * operations.length);
+    let resultNumber;
 
-  if (operationIndex === 0) {
-    resultNumber = guessRandomNumber * 3;
-  } else {
-    resultNumber = guessRandomNumber + 6;
-  }
+    if (operationIndex === 0) {
+        resultNumber = guessRandomNumber * 3;
+    } else {
+        resultNumber = guessRandomNumber + 6;
+    }
 
-  const guess = parseInt(prompt(`Я загадал число, ${operations[operationIndex]} и получил ${resultNumber}. Угадай моё число от 1 до 100`), 10);
+    const guess = parseInt(prompt(`Я загадал число, ${operations[operationIndex]} и получил ${resultNumber}. Угадай моё число от 1 до 100`), 10);
 
-  if (isNaN(guess) || guess < 1 || guess > 100) {
-    console.log("Пожалуйста, введите число от 1 до 100.");
-  } else if (guess === guessRandomNumber) {
-    console.log("Поздравляю, ты угадал!");
-  } else {
-    console.log(`Попробуй ещё раз. Я загадал число ${guessRandomNumber}.`);
-  }
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+        console.log("Пожалуйста, введите число от 1 до 100.");
+    } else if (guess === guessRandomNumber) {
+        console.log("Поздравляю, ты угадал!");
+    } else {
+        console.log(`Попробуй ещё раз. Я загадал число ${guessRandomNumber}.`);
+    }
 }
 console.log(guessNumber());
 
@@ -34,66 +32,66 @@ console.log(guessNumber());
 // Игра 2
 
 function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function generateTask() {
-  const num1 = getRandomInt(1, 10);
-  const num2 = getRandomInt(1, 10);
-  const operators = ['+', '-', '*', '/'];
-  const operator = operators[getRandomInt(0, operators.length - 1)];
+    const num1 = getRandomInt(1, 10);
+    const num2 = getRandomInt(1, 10);
+    const operators = ['+', '-', '*', '/'];
+    const operator = operators[getRandomInt(0, operators.length - 1)];
 
-  let task;
-  let result;
+    let task;
+    let result;
 
-  switch (operator) {
-    case '+':
-      task = `${num1} + ${num2}`;
-      result = num1 + num2;
-      break;
-    case '-':
-      task = `${num1} - ${num2}`;
-      result = num1 - num2;
-      break;
-    case '*':
-      task = `${num1} * ${num2}`;
-      result = num1 * num2;
-      break;
-    case '/':
-      task = `${num1} / ${num2}`;
-      result = num1 / num2;
-      break;
-  }
+    switch (operator) {
+        case '+':
+            task = `${num1} + ${num2}`;
+            result = num1 + num2;
+            break;
+        case '-':
+            task = `${num1} - ${num2}`;
+            result = num1 - num2;
+            break;
+        case '*':
+            task = `${num1} * ${num2}`;
+            result = num1 * num2;
+            break;
+        case '/':
+            task = `${num1} / ${num2}`;
+            result = num1 / num2;
+            break;
+    }
 
-  return { task, result };
+    return { task, result };
 }
 
 function playGame() {
-  const { task, result } = generateTask();
-  const userAnswer = prompt(`Решите задачу: ${task}`);
+    const { task, result } = generateTask();
+    const userAnswer = prompt(`Решите задачу: ${task}`);
 
-  if (userAnswer === null) {
-    console.log('Игра отменена.');
-    return;
-  }
+    if (userAnswer === null) {
+        console.log('Игра отменена.');
+        return;
+    }
 
-  const parsedUserAnswer = parseFloat(userAnswer);
+    const parsedUserAnswer = parseFloat(userAnswer);
 
-  if (parsedUserAnswer === result) {
-    console.log('Правильно!');
-  } else {
-    console.log(`Неправильно. Правильный ответ: ${result}`);
-  }
+    if (parsedUserAnswer === result) {
+        console.log('Правильно!');
+    } else {
+        console.log(`Неправильно. Правильный ответ: ${result}`);
+    }
 }
 
 // Задание 1
 
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
-  console.log(numbs[i]);
-  if (numbs[i] === 10) {
-    break;
-  }
+    console.log(numbs[i]);
+    if (numbs[i] === 10) {
+        break;
+    }
 }
 
 // Задание 2
@@ -113,10 +111,10 @@ console.log(arr);
 let multidimensionalArray = [];
 
 for (let i = 0; i < 3; i++) {
-  multidimensionalArray[i] = [];
-  for (let j = 0; j < 3; j++) {
-    multidimensionalArray[i][j] = 1;
-  }
+    multidimensionalArray[i] = [];
+    for (let j = 0; j < 3; j++) {
+        multidimensionalArray[i][j] = 1;
+    }
 }
 
 console.log(multidimensionalArray);
@@ -139,9 +137,9 @@ console.log(filteredArr);
 let guessNumb = [9, 8, 7, 6, 5];
 let numb = prompt('угадай число')
 if (guessNumb.includes(Number(numb))) {
-  alert('«Угадал»');
+    alert('«Угадал»');
 } else {
-  console.log('«Не угадал»');
+    console.log('«Не угадал»');
 
 }
 
@@ -154,23 +152,23 @@ console.log(reversedString);
 // Задание 9
 
 const arra = [[1, 2, 3], [4, 5, 6]];
-const mergedArra = array.flat();
+const mergedArra = [...arra[0], ...arra[1]];
 console.log(mergedArra);
 
 // Задание 10
 
 const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let i = 0; i < newArr.length; i++) {
-  if (newArr[i] === 1) {
-    console.log(newArr[i] + newArr[i + 1]);
-    break;
-  }
+    if (newArr[i] === 1) {
+        console.log(newArr[i] + newArr[i + 1]);
+        break;
+    }
 }
 
 // Задание 11
 
 function integers(arr) {
-  return arr.map(item => item ** 2);
+    return arr.map(item => item ** 2);
 }
 
 console.log(integers([1, 2, 3]));
@@ -178,14 +176,14 @@ console.log(integers([1, 2, 3]));
 // Задание 12
 
 function getLength(arr) {
-  return arr.map(item => item.length);
+    return arr.map(item => item.length);
 }
 console.log(getLength(['добро', 'зло']));
 
 // Задание 13
 
 function negativeValues(array) {
-  return array.filter(item => item < 0);
+    return array.filter(item => item < 0);
 
 }
 console.log(negativeValues([1, 2, 3, -4, 5, -6, 7, 8, 9, 10]));
@@ -193,18 +191,18 @@ console.log(negativeValues([1, 2, 3, -4, 5, -6, 7, 8, 9, 10]));
 // Задание 14 
 
 function random() {
-  return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 10);
 }
 
 const arr1 = [];
 for (let i = 0; i < 10; i++) {
-  arr1.push(random());
+    arr1.push(random());
 }
 const evenArr = [];
 for (let i = 0; i < arr1.length; i++) {
-  if (arr1[i] % 2 === 0) {
-    evenArr.push(arr1[i]);
-  };
+    if (arr1[i] % 2 === 0) {
+        evenArr.push(arr1[i]);
+    };
 
 }
 console.log(evenArr);
@@ -212,12 +210,12 @@ console.log(evenArr);
 // Задание 15 
 
 function random() {
-  return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 10);
 }
 
 const arr2 = [];
 for (let i = 0; i < 3; i++) {
-  arr2.push(random());
+    arr2.push(random());
 }
 
 console.log(arr2);
@@ -228,13 +226,13 @@ console.log(arr2.reduce((a, b) => a + b) / arr2.length);
 // Игра 3
 
 function reverseText() {
-  const inputText = prompt("Введите текст:");
-  if (inputText) {
-    const reversedText = inputText.split('').reverse().join('');
-    alert(reversedText);
-  } else {
-    alert("Вы не ввели текст.");
-  }
+    const inputText = prompt("Введите текст:");
+    if (inputText) {
+        const reversedText = inputText.split('').reverse().join('');
+        alert(reversedText);
+    } else {
+        alert("Вы не ввели текст.");
+    }
 }
 
 // Игра 4
@@ -243,38 +241,43 @@ let correctCount = 0;
 
 function loadQuestion() {
 
-  const quiz = [
-    {
-      question: "Какой цвет небо?",
-      options: ["1.Красный", "2.Синий", "3.Зеленый"],
-      correctAnswer: 2
-    },
-    {
-      question: "Сколько дней в неделе?",
-      options: ["1.Шесть", "2.Семь", "3.Восемь"],
-      correctAnswer: 2
-    },
-    {
-      question: "Сколько у человека пальцев на одной руке?",
-      options: ["1.Четыре", "2.Пять", "3.Шесть"],
-      correctAnswer: 2
-    }
-  ];
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1.Красный", "2.Синий", "3.Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1.Шесть", "2.Семь", "3.Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1.Четыре", "2.Пять", "3.Шесть"],
+            correctAnswer: 2
+        }
+    ];
 
-  quiz.forEach((question) => {
-    let questionText = `${question.question}\n`;
-    question.options.forEach((option, index) => {
-      questionText += `${index + 1}. ${option}\n`;
+    quiz.forEach((question, index) => {
+        let questionText = `${question.question}\n`;
+        question.options.forEach((option, optionIndex) => {
+            questionText += `${optionIndex + 1}. ${option}\n`;
+        });
+
+        const userAnswer = prompt(questionText);
+
+        if (userAnswer === null) {
+            alert(`Вы завершили игру досрочно`);
+            return;
+        }
+
+        if (parseInt(userAnswer) === question.correctAnswer) {
+            correctCount++;
+        }
     });
 
-    const userAnswer = parseInt(prompt(questionText));
-
-    if (userAnswer === question.correctAnswer) {
-      correctCount++;
-    }
-  });
-
-  alert(`Вы правильно ответили на ${correctCount} вопросов из ${quiz.length}`);
+    alert(`Вы правильно ответили на ${correctCount} вопросов из ${quiz.length}`);
 }
 
 // Работа с кодом
@@ -285,32 +288,31 @@ const js = prompt('Весит груша нельзя скушать?');
 const jsAnswer = 'лампочка';
 
 if (js.toLocaleUpperCase() === jsAnswer.toLocaleUpperCase()) {
-  console.log('Правильно!');
+    console.log('Правильно!');
 } else {
-  console.log('Упс, ошибка попробуй еще');
+    console.log('Упс, ошибка попробуй еще');
 }
 
 // задание 2
 
 function printProducts() {
-  const products = ['хлеб', 'молоко', 'сыр', 'огурцы', 'помидоры', 'кефир'];
-  const bakeryProduct = 'хлеб';
+    const products = ['хлеб', 'молоко', 'сыр', 'огурцы', 'помидоры', 'кефир'];
+    const bakeryProduct = 'хлеб';
 
-  products.forEach(product => {
-    if (product.toLowerCase().includes(bakeryProduct.toLowerCase())) {
-      console.log(product);
-    }
-  });
+    products.forEach(product => {
+        if (product.toLowerCase().includes(bakeryProduct.toLowerCase())) {
+            console.log(product);
+        }
+    });
 }
 
 // задание 3
 
-Math.ceil(32.58884);
-console.log(33);
-Math.floor(32.58884);
-console.log(32);
-Math.round(32.58884);
-console.log(33);
+let num3 = 32.58884;
+console.log(Math.ceil(num3));
+console.log(Math.floor(num3));
+console.log(Math.round(num3));
+
 
 // задание 4
 
@@ -326,29 +328,22 @@ console.log(max);
 // задание 5
 
 function random() {
-  const randomNum = Math.random() * 10 + 1;
+    const randomNum = Math.random() * 10 + 1;
 
-  console.log(randomNum);
+    console.log(randomNum);
 }
 
 // задание 6
 
-function randomArray(maxNumber) {
-  const arrayLength = Math.floor(maxNumber / 2);
-  const emptyArray = [];
-
-  for (let i = 0; i < arrayLength; i++) {
-    const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
-    emptyArray.push(randomNumber);
-  }
-
-  return emptyArray;
+function randomArray(Numbeer) {
+    return Array.from({ length: Math.floor(Numbeer / 2) }, () => (Math.random() * Numbeer));
 }
+console.log(randomArray(10));
 
 // задание 7
 
 function getRandomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const randomNumbe = getRandomInteger(1, 10);
@@ -357,7 +352,7 @@ console.log(randomNumbe);
 // задание 8
 
 function getRandomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const result = getRandomInteger(41.345, 43.4533);
@@ -383,37 +378,152 @@ console.log(currentDate);
 // задание 11
 
 function russDateFormat() {
-  const now = new Date();
-  const month = {
-    "January": "января",
-    "February": "февраля",
-    "March": "марта",
-    "April": "апреля",
-    "May": "мая",
-    "June": "июня",
-    "July": "июля",
-    "August": "августа",
-    "September": "сентября",
-    "October": "октября",
-    "November": "ноября",
-    "December": "декабря"
-  }
+    const now = new Date();
+    const month = {
+        "January": "января",
+        "February": "февраля",
+        "March": "марта",
+        "April": "апреля",
+        "May": "мая",
+        "June": "июня",
+        "July": "июля",
+        "August": "августа",
+        "September": "сентября",
+        "October": "октября",
+        "November": "ноября",
+        "December": "декабря"
+    }
 
-  const dayWeek = {
-    "Monday": "понедельник",
-    "Tuesday": "вторник",
-    "Wednesday": "среда",
-    "Thursday": "четверг",
-    "Friday": "пятница",
-    "Saturday": "суббота",
-    "Sunday": "воскресенье"
-  };
-  const day = now.getDate();
-  const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
-  const year = now.getFullYear();
-  const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
+    const dayWeek = {
+        "Monday": "понедельник",
+        "Tuesday": "вторник",
+        "Wednesday": "среда",
+        "Thursday": "четверг",
+        "Friday": "пятница",
+        "Saturday": "суббота",
+        "Sunday": "воскресенье"
+    };
+    const day = now.getDate();
+    const monthName = month[now.toLocaleString('en-US', { month: 'long' }).toString()];
+    const year = now.getFullYear();
+    const dayOfWeek = dayWeek[now.toLocaleString('en-US', { weekday: 'long' }).toString()];
 
-  console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
+    console.log(`Дата: ${day} ${monthName} ${year} — это ${dayOfWeek}.`);
 }
 
 russDateFormat();
+
+// Домашнее задание №8 
+// Игра 5
+
+function rockPaperScissors() {
+    const userChoice = prompt('Сыграем? В камень, ножницы, бумага');
+    if (userChoice === null) {
+        console.log('Игра отменена.');
+        return;
+    }
+    const lowerCaseChoice = userChoice.toLowerCase();
+    const choices = ["камень", "ножницы", "бумага"];
+
+    if (!choices.includes(lowerCaseChoice)) {
+        alert('Некорректный выбор. Пожалуйста, введите "камень", "ножницы" или "бумага".');
+        return;
+    }
+
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    console.log('Выбор компьютера: ' + computerChoice);
+
+    setTimeout(() => {
+        console.log('result');
+    });
+
+    if (lowerCaseChoice === computerChoice) {
+        alert('Ничья! Вы оба выбрали ' + lowerCaseChoice);
+    } else if ((lowerCaseChoice === 'камень' && computerChoice === 'ножницы') ||
+        (lowerCaseChoice === 'ножницы' && computerChoice === 'бумага') ||
+        (lowerCaseChoice === 'бумага' && computerChoice === 'камень')) {
+        alert('Вы выиграли! ' + lowerCaseChoice + ' побеждает ' + computerChoice);
+    } else {
+        alert('Вы проиграли! ' + computerChoice + ' побеждает ' + lowerCaseChoice);
+    }
+}
+// задание 1
+
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+
+people.sort((a, b) => a.age - b.age);
+
+console.log(people);
+
+// задание 2
+
+function isPositive(num) {
+    return num > 0;
+}
+
+function isMale(person) {
+    return person.gender === 'male';
+}
+
+function filter(array, ruleFunction) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            result.push(array[i]);
+        }
+    }
+    return result;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const peoples = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(peoples, isMale));
+
+// задание 3
+
+const intervalId = setInterval(() => {
+    console.log('today');
+}, 3000);
+
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log('30 секунд прошло');
+}, 30000);
+
+// задание 4
+function delayForSecond(callback) {
+    setTimeout(() => {
+        callback();
+    }, 1000);
+}
+delayForSecond(() => {
+    console.log('Привет, Глеб!');
+});
+
+// задание 5
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}!`); 4
+}
+
+delayForSecond(() => sayHi('Глеб'));
+
