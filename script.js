@@ -527,3 +527,11 @@ function sayHi(name) {
 
 delayForSecond(() => sayHi('Глеб'));
 
+// Игра № 6
+
+function randomColorGenerator() {
+        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        document.getElementById('color').style.backgroundColor = randomColor;
+        console.log('Сгенерированный цвет: ', randomColor);
+        document.getElementById('result').textContent = `Сгенерированный цвет: ${randomColor}`;
+      }
