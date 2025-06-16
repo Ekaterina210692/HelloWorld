@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Добро пожаловать на мой сайт мини-игр</h1>
+      <button class="but">скрыть</button>
+      <button class="change-text-button">Изменить текст</button>
+      <p class="header__text">
+        Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+        «Поехали!» и приступай.
+      </p>
+      <button class="change-color-button">Изменить цвет</button>
+    </header>
+    <div>
+      <p class="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing.
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing.
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing.
+      </p>
+    </div>
+    <div>
+      <p class="descript">Lorem, ipsum dolor.</p>
+      <p class="desc">Lorem, ipsum dolor.</p>
+      <p class="descript">Lorem, ipsum dolor.</p>
+    </div>
+    <div>
+      <p class="desscription">Первый абзац с классом desscription</p>
+      <p class="desscription">Второй абзац с классом desscription</p>
+      <p class="desscription">Третий абзац с классом desscription</p>
+    </div>
+    <button id="removeElementButton">Удалить элемент</button>
+    <div>
+      <button id="addElementButton">Добавить элемент</button>
+    </div>
+    <script>
+      const headerTitle = document.querySelector(".header__title");
+      const but = document.querySelector(".but");
+
+      but.addEventListener("click", function () {
+        if (headerTitle.style.display === "none") {
+          headerTitle.style.display = "block";
+          but.textContent = "Скрыть";
+        } else {
+          headerTitle.style.display = "none";
+          but.textContent = "Показать";
+        }
+      });
+    </script>
+    <script>
+      const headerTitl = document.querySelector(".header__title");
+      const changeTextButton = document.querySelector(".change-text-button");
+
+      changeTextButton.addEventListener("click", function () {
+        headerTitle.textContent = "Привет, мир!";
+      });
+    </script>
+    <script>
+      const paragraph = document.querySelector(".header__text");
+      const changeColorButton = document.querySelector(".change-color-button");
+
+      changeColorButton.addEventListener("click", function () {
+        paragraph.style.color = "blue";
+      });
+    </script>
+    <script>
+      const descriptions = document.querySelectorAll(".description");
+
+      descriptions.forEach(function (description) {
+        description.textContent = "«Измененный текст»";
+      });
+    </script>
+    <script>
+      const descript = document.querySelectorAll(".descript");
+
+      descript.forEach(function (descript) {
+        descript.textContent = "Новый текст";
+      });
+    </script>
+    <script>
+      const removeElementButton = document.querySelector(
+        "#removeElementButton"
+      );
+
+      removeElementButton.addEventListener("click", function () {
+        const firstDesscription = document.querySelector(".desscription");
+        if (firstDesscription) {
+          firstDesscription.remove();
+        }
+      });
+    </script>
+    <script>
+      document
+        .getElementById("addElementButton")
+        .addEventListener("click", function () {
+          const newParagraph = document.createElement("p");
+
+          newParagraph.textContent = "Новый абзац";
+
+          document.body.appendChild(newParagraph);
+        });
+    </script>
+  </body>
+</html>
