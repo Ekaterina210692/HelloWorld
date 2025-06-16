@@ -46,6 +46,7 @@
             font-size: 16px;
             padding: 16px 103px;
             margin-left: 35px;
+            margin-left: 18%;
         }
     }
 
@@ -144,6 +145,23 @@
         &__card {
             display: flex;
             flex-direction: column;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__card:nth-child(odd) {
+            flex-direction: column;
+        }
+
+        &__card:nth-child(even) {
+            flex-direction: column;
+        }
+
+        &__text {
+            width: 100%;
+            align-items: center;
         }
     }
 }

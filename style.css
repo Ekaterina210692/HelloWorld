@@ -252,6 +252,8 @@ body {
   .minigames__heading {
     font-size: 55px;
     padding-top: 48px;
+    font-size: 50px;
+    padding: 45px 0px 45px;
   }
   .minigames__text {
     width: 45%;
@@ -287,6 +289,31 @@ body {
   }
   .animatedStrip__game {
     font-size: 20px;
+@media (min-width: 768px) and (max-width: 853px) {
+  .center {
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+  .top-img {
+    right: -286px;
+    top: -538.14px;
+    width: 140%;
+    transform: rotate(-142deg);
+  }
+  .header__title {
+    font-size: 46px;
+  }
+  .header__button {
+    padding: 12px 45px;
+    font-size: 20px;
+  }
+  .header__text {
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+  .animatedStrip__game {
+    font-size: 15px;
   }
   .top-img1 {
     left: -20px;
@@ -352,7 +379,7 @@ body {
   .header__button {
     font-size: 16px;
     padding: 16px 103px;
-    margin-left: 35px;
+    margin-left: 18%;
   }
   .games {
     display: none;
@@ -433,5 +460,18 @@ body {
   .minigames__card {
     display: flex;
     flex-direction: column;
+  }
+  .minigames__img {
+    width: 100%;
+  }
+  .minigames__card:nth-child(odd) {
+    flex-direction: column;
+  }
+  .minigames__card:nth-child(even) {
+    flex-direction: column;
+  }
+  .minigames__text {
+    width: 100%;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
