@@ -34,6 +34,10 @@
 
     <button id="removeElementButton">Удалить элемент</button>
 
+    <div>
+      <button id="addElementButton">Добавить элемент</button>
+    </div>
+
     <script>
       const headerTitle = document.querySelector(".header__title");
       const but = document.querySelector(".but");
@@ -89,5 +93,14 @@
             }
         });
     </script>
+    <script>
+    document.getElementById('addElementButton').addEventListener('click', function() {
+        const newParagraph = document.createElement('p');
+        
+        newParagraph.textContent = 'Новый абзац';
+        
+        document.body.appendChild(newParagraph);
+    });
+</script>
 </body>
 </html>
