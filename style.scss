@@ -80,7 +80,16 @@ body {
     text-align: center;
     padding: 9px;
     overflow: hidden;
+    animation: scroll-left 10s linear infinite;
+    animation-direction: normal;
 
+@keyframes scroll-left {
+    from {
+        transform: translateX(10%);
+    } to {
+        transform: translateX(-10%);
+    }
+}
     &__game {
         color: rgb(32, 32, 39);
         text-decoration: none;
