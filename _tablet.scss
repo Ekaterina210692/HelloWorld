@@ -57,33 +57,15 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 833px) {
-    .center {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .header__title {
-        font-size: 58px;
-    }
-
-    .header__button {
-        padding: 12px 55px;
-        font-size: 24px;
-    }
-
-    .header__text {
-        font-size: 21px;
 @media (min-width: 768px) and (max-width: 853px) {
     .center {
         padding-left: 32px;
         padding-right: 32px;
         text-align: center;
     }
-.top-img {
-        right: -286px;
-        top: -538.14px;
-        width: 140%;
+    .top-img {
+        right: -176px;
+        top: -251.14px;
         transform: rotate(-142deg);
     }
     .header__title {
@@ -108,12 +90,6 @@
     .top-img1 {
         left: -20px;
         top: -82px;
-    }
-
-    .top-img {
-        right: -416px;
-        top: -297.14px;
-        width: 79%;
     }
 
     .games__content {

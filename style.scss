@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,17 +79,9 @@ body {
     background: rgb(188, 236, 48);
     text-align: center;
     padding: 9px;
+    display: flex;
     overflow: hidden;
-    animation: scroll-left 10s linear infinite;
-    animation-direction: normal;
 
-@keyframes scroll-left {
-    from {
-        transform: translateX(10%);
-    } to {
-        transform: translateX(-10%);
-    }
-}
     &__game {
         color: rgb(32, 32, 39);
         text-decoration: none;
@@ -179,8 +171,7 @@ body {
         }
     }
 }
-
-.link1 {
+.blyt {
     margin-top: 37px;
 }
 
@@ -232,6 +223,8 @@ body {
     }
 
     &__but {
+        width: 247px;
+        margin-top: 37px;
         border-radius: 60px;
         background-color: #202027;
         padding: 16px 65px;
