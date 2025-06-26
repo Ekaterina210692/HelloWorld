@@ -36,38 +36,40 @@
         <a href="#games" class="header__button">Поехали!</a>
       </header>
     </div>
-    <div class="animatedStrip center">
-      <a class="animatedStrip__game" href="#">Викторина</a>
+    <section class="animatedStrip">
+      <div class="animatedStrip__wrapper">
+      <p class="animatedStrip__game">Викторина</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-      <a class="animatedStrip__game" href="#">Угадай число</a>
+      <p class="animatedStrip__game">Угадай число</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-      <a class="animatedStrip__game" href="#">Переверни текст</a>
+      <p class="animatedStrip__game">Переверни текст</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-      <a class="animatedStrip__game" href="#">Простая арифметика</a>
+      <p class="animatedStrip__game">Простая арифметика</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-      <a class="animatedStrip__game" href="#">Камень, ножницы, бумага</a>
+      <p class="animatedStrip__game">Камень, ножницы, бумага</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-      <a class="animatedStrip__game" href="#">Генератор случайных цветов</a>
+      <p class="animatedStrip__game">Генератор случайных цветов</p>
       <img
         class="animatedStrip__img"
         src="./img/Star-minbar.png"
         alt="starmin">
-    </div>
+        </div>
+  </section>
     <section class="games">
       <div class="games__box center">
         <h2 id="games" class="games__heading">Об играх</h2>
@@ -148,7 +150,6 @@
             <button onclick="guessNumber()" class="minigames__but">
               Играть!
             </button>
-            <p id="result"></p>
           </div>
         </article>
         <article id="arithmetic" class="minigames__two minigames__card">
@@ -159,7 +160,6 @@
               Попробуй решить простые арифметические задачи.
             </p>
             <button onclick="playGame()" class="minigames__but">Играть!</button>
-            <p id="result"></p>
           </div>
         </article>
         <article id="Reverse-text" class="minigames__three minigames__card">
@@ -172,7 +172,6 @@
             <button onclick="reverseText()" class="minigames__but">
               Играть!
             </button>
-            <p id="result"></p>
           </div>
         </article>
         <article id="quiz" class="minigames__four minigames__card">
@@ -185,7 +184,6 @@
             <button onclick="loadQuestion()" class="minigames__but">
               Играть!
             </button>
-            <p id="result"></p>
           </div>
         </article>
         <article id="Rock" class="minigames__five minigames__card">
@@ -212,7 +210,6 @@
             <button onclick="randomColorGenerator()" class="minigames__but">
               Играть!
             </button>
-            <p id="result"></p>
           </div>
         </article>
       </div>

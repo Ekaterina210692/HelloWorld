@@ -14,6 +14,23 @@
         width: 81%;
     }
 
+    .header__title {
+        font-size: 54px;
+    }
+
+    .header__text {
+        font-size: 21px;
+    }
+
+    .header__button {
+        font-size: 19px;
+        padding: 9px 51px;
+    }
+
+    .animatedStrip__game {
+        font-size: 17px;
+    }
+
     .games__heading {
         font-size: 54px;
     }
@@ -44,16 +61,16 @@
     }
 
     .minigames__subtitle {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .minigames__article {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .minigames__but {
-        font-size: 20px;
-        padding: 12px 54px;
+        font-size: 17px;
+        padding: 8px 41px;
     }
 }
 
@@ -61,11 +78,11 @@
     .center {
         padding-left: 32px;
         padding-right: 32px;
-        text-align: center;
     }
     .top-img {
-        right: -176px;
-        top: -251.14px;
+        right: -40%;
+        top: -451px;
+        width: 71%;
         transform: rotate(-142deg);
     }
     .header__title {
@@ -83,8 +100,8 @@
     }
 
     .animatedStrip__game {
-        font-size: 20px;
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     .top-img1 {
@@ -92,23 +109,18 @@
         top: -82px;
     }
 
-    .games__content {
-        gap: 12px;
-    }
-
-    .games__text {
-        font-size: 19px;
-        padding: 0px;
-        margin-bottom: 32px;
-        line-height: 25px;
-    }
-
-    .games__heading {
-        font-size: 50px;
-        padding-top: 45px;
-    }
-
     .minigames {
         padding-bottom: 96px;
     }
+
+    .footer__text {
+        font-size: 14px;
+        line-height: 0px;
+}
+}
+
+@media (max-width: 844px) {
+    .games {
+        display: none;
+  }
 }

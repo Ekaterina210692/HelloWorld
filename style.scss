@@ -77,10 +77,16 @@ body {
 .animatedStrip {
     box-sizing: border-box;
     background: rgb(188, 236, 48);
-    text-align: center;
     padding: 9px;
-    display: flex;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        animation: scrollLeft 10s linear infinite;
+    }
 
     &__game {
         color: rgb(32, 32, 39);
@@ -95,6 +101,15 @@ body {
         height: 16px;
         margin: 0px 5px;
     }
+ 
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+}
 }
 
 .games {
@@ -223,8 +238,6 @@ body {
     }
 
     &__but {
-        width: 247px;
-        margin-top: 37px;
         border-radius: 60px;
         background-color: #202027;
         padding: 16px 65px;

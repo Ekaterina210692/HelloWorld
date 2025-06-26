@@ -23,7 +23,6 @@ function guessNumber() {
         alert(`Попробуй ещё раз. Я загадал число ${guessRandomNumber}.`);
     }
 }
-document.getElementById('playButton').addEventListener('click', guessNumber);
 
 // Игра 2
 
@@ -176,5 +175,4 @@ function randomColorGenerator() {
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         document.getElementById('color').style.backgroundColor = randomColor;
         console.log('Сгенерированный цвет: ', randomColor);
-        document.getElementById('result').textContent = `Сгенерированный цвет: ${randomColor}`;
       }
