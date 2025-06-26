@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,9 +77,16 @@ body {
 .animatedStrip {
     box-sizing: border-box;
     background: rgb(188, 236, 48);
-    text-align: center;
     padding: 9px;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        animation: scrollLeft 10s linear infinite;
+    }
 
     &__game {
         color: rgb(32, 32, 39);
@@ -94,6 +101,15 @@ body {
         height: 16px;
         margin: 0px 5px;
     }
+ 
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+}
 }
 
 .games {
@@ -169,6 +185,9 @@ body {
             transform: scale(1.1);
         }
     }
+}
+.blyt {
+    margin-top: 37px;
 }
 
 .minigames {
